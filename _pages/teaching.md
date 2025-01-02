@@ -29,7 +29,6 @@ nav_order: 6
 - 2024-2025 [Zooplankton semantic segmenation](https://www.kaggle.com/competitions/3md4040-2025-challenge/overview)
 - 2023-2024 : we participated to the [GeoLifeClef 2022 challenge](https://www.kaggle.com/competitions/geolifeclef-2022-lifeclef-2022-fgvc9/overview), after the competition was over. The final leaderboard of the teams is shown below.
 
-
 <div class="row">
     <div class="col-sm-4">
 	</div>
@@ -39,8 +38,6 @@ nav_order: 6
     <div class="col-sm-4">
 	</div>
 </div>
-
-
 
 - 2022-2023 [Phytoplankton temporal series prediction](https://www.kaggle.com/c/temporal-prediction-of-plankton)
 - 2021-2022 [Zooplankton classification](https://www.kaggle.com/c/3md4040-2022-challenge)
