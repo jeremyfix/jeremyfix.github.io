@@ -9,6 +9,9 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+Below is a (partial) list of my publications. You may find the most up to date
+list on [https://cv.hal.science/fix-jeremy](https://cv.hal.science/fix-jeremy).
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
