@@ -5,7 +5,7 @@ repo_description_lines_max: 2
 
 github_repos:
   - jeremyfix/easykf
-  - jeremyfix/torchcvnn
+  - torchcvnn/torchcvnn
   - jeremyfix/deeplearning_demos
   - jeremyfix/deeplearning-lectures
   - jeremyfix/pytorch_template_code
