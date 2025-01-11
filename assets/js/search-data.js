@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-a-post-with-code",
+        },{id: "post-one-liners",
+      
+        title: "One liners",
+      
+      description: "One liner beauty for aggregating files and computing statistics",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/oneliner/";
+        
+      },
+    },{id: "post-a-post-with-code",
       
         title: "a post with code",
       
