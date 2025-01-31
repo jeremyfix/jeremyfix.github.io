@@ -21,7 +21,7 @@ nav_order: 6
 
 - Lab 1 [Introduction à pytorch](https://ia2vr.gitlabpages.inria.fr/iliar/pytorch_introduction.html)
 - Lab 2 [Segmentation sémantique avec un modèle encodeur/décodeur sur Pascal-VOC](https://ia2vr.gitlabpages.inria.fr/deeplearning/lab2.html)
-- Lab 3 [Automatic Speech Recognition](https://ia2vr.gitlabpages.inria.fr/deeplearning/lab2.html)
+- Lab 3 [Automatic Speech Recognition](https://teaching.pages.centralesupelec.fr/deeplearning-lectures-build/02-pytorch-asr.html)
 - Lab 4 [Deep Convolutional Generative Adversarial Networks](https://teaching.pages.centralesupelec.fr/deeplearning-lectures-build/03-pytorch-gan.html)
 
 ## Challenges
