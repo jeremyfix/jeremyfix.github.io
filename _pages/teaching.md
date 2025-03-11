@@ -26,7 +26,7 @@ nav_order: 6
 
 ## Challenges
 
-- 2024-2025 [Zooplankton semantic segmenation](https://www.kaggle.com/competitions/3md4040-2025-challenge/overview)
+- 2024-2025 [Zooplankton semantic segmentation](https://www.kaggle.com/competitions/3md4040-2025-challenge/overview)
 
 To have an idea about the performances of the teams, below are renderings of the
 predictions on the test images where the color code is :
