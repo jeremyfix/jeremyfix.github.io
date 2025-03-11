@@ -29,7 +29,9 @@ nav_order: 6
 - 2024-2025 [Zooplankton semantic segmenation](https://www.kaggle.com/competitions/3md4040-2025-challenge/overview)
 
 <div class="row">
+	<div class="col-sm-2">
 	🥱 F1=0.926
+	</div>
     <div class="col-sm-4">
 		{% include figure.liquid path="assets/img/2024_deep_challenge/1_polaih63_jurand_maxdodo_durand/pred_rg20090121_mask.png" title="Team 1, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
