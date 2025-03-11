@@ -2,7 +2,7 @@
 layout: post
 title: Python and Paraview for batch processing
 date: 2025-01-08 20:57:00
-description: 
+description:
 tags: python paraview batch
 categories: python paraview
 featured: true
@@ -11,7 +11,7 @@ featured: true
 I just tested a super useful feature of [Paraview](https://github.com/Kitware/ParaView). In a nutshell, I have been using paraview in the context of the research project Woodseer, for 3d rendering Xrays and their annotations.
 
 Unfortunately, I had to generate illustrations from a batch of data and doing so
-from the GUI is not easy. 
+from the GUI is not easy.
 
 Fortunaly, Paraview allows to record all the operations performed on the GUI and
 export all of these operations as a python script. The script is hardcoding the
@@ -37,7 +37,6 @@ pvpython paraplot_bil.py /opt/Datasets/Woodseer/Slicing/Sapin/4396
 And there you are :
 
 {% include figure.liquid path="assets/img/bil_4396.png" title="Example rendering using paraview python scripting" class="img-fluid rounded z-depth-1" zoomable=true %}
-
 
 The python script that has been produced by the paraview export is given below :
 
