@@ -28,6 +28,14 @@ nav_order: 6
 
 - 2024-2025 [Zooplankton semantic segmenation](https://www.kaggle.com/competitions/3md4040-2025-challenge/overview)
 
+To have an idea about the performances of the teams, below are renderings of the
+predictions on the test images where the color code is :
+
+- blue: true negatives
+- green : true positives
+- red : false positives
+- purple: false negatives
+
 <div class="row">
 	<div class="col-sm-2">
 	🥱 F1=0.926
@@ -92,6 +100,94 @@ nav_order: 6
     </div>
     <div class="col-sm-4">
 		{% include figure.liquid path="assets/img/2024_deep_challenge/6_gomes_aka_bui_alexialan/pred_rg20090520_mask.png" title="Team 6, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	C'est qui l'patron ? 🙄, F1=0.90897
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/7_fix/pred_rg20090121_mask.png" title="Team 7, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/7_fix/pred_rg20090520_mask.png" title="Team 7, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	Eliott, F1=0.90218
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/8_dumont_merjani/pred_rg20090121_mask.png" title="Team 8, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/8_dumont_merjani/pred_rg20090520_mask.png" title="Team 8, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	., F1=0.90061
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/9_yvan_malick_dhaou_diallo/pred_rg20090121_mask.png" title="Team 9, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/9_yvan_malick_dhaou_diallo/pred_rg20090520_mask.png" title="Team 9, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	100% Homemade UNet, F1=0.88907
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/10_capitant_malloi_theo_moine/pred_rg20090121_mask.png" title="Team 10, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/10_capitant_malloi_theo_moine/pred_rg20090520_mask.png" title="Team 10, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	TN, F1=0.88580
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/11_yesmine_bouattour_abbes_rayen/pred_rg20090121_mask.png" title="Team 11, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/11_yesmine_bouattour_abbes_rayen/pred_rg20090520_mask.png" title="Team 11, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	Still in the bottom, F1=0.86602
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/12_haris/pred_rg20090121_mask.png" title="Team 12, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/12_haris/pred_rg20090520_mask.png" title="Team 12, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	Wassim Behlaj, F1=0.85713
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/13_belhaj/pred_rg20090121_mask.png" title="Team 13, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/13_belhaj/pred_rg20090520_mask.png" title="Team 13, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	Etienne Andrier, F1=0.83777
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/14_andrier/pred_rg20090121_mask.png" title="Team 14, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/14_andrier/pred_rg20090520_mask.png" title="Team 14, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
