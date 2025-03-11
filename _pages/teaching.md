@@ -27,6 +27,18 @@ nav_order: 6
 ## Challenges
 
 - 2024-2025 [Zooplankton semantic segmenation](https://www.kaggle.com/competitions/3md4040-2025-challenge/overview)
+
+<div class="row">
+	🥱 F1=0.926
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/1_polaih63_jurand_maxdodo_durand/pred_rg20090121_mask.png" title="Team 1, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/1_polaih63_jurand_maxdodo_durand/pred_rg20090520_mask.png" title="Team 1, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+
 - 2023-2024 : we participated to the [GeoLifeClef 2022 challenge](https://www.kaggle.com/competitions/geolifeclef-2022-lifeclef-2022-fgvc9/overview), after the competition was over. The final leaderboard of the teams is shown below.
 
 <div class="row">
