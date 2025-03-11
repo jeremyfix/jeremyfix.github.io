@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-one-liners",
+        },{id: "post-python-and-paraview-for-batch-processing",
+      
+        title: "Python and Paraview for batch processing",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/scriptingParaview/";
+        
+      },
+    },{id: "post-one-liners",
       
         title: "One liners",
       
