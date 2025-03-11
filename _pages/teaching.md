@@ -39,6 +39,61 @@ nav_order: 6
 		{% include figure.liquid path="assets/img/2024_deep_challenge/1_polaih63_jurand_maxdodo_durand/pred_rg20090520_mask.png" title="Team 1, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
+<div class="row">
+	<div class="col-sm-2">
+	C'est lui ☝️, F1=0.92364
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/2_vanderbeken/pred_rg20090121_mask.png" title="Team 2, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/2_vanderbeken/pred_rg20090520_mask.png" title="Team 2, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	AST, F1=0.91470
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/3_xavelche_sultan_bertho_pelhate/pred_rg20090121_mask.png" title="Team 3, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/3_xavelche_sultan_bertho_pelhate/pred_rg20090520_mask.png" title="Team 3, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	العبرة بالخواتيم, F1=0.91287
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/4_echaabi_mockbel_hard_talaa/pred_rg20090121_mask.png" title="Team 4, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/4_echaabi_mockbel_hard_talaa/pred_rg20090520_mask.png" title="Team 4, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	Random predictions 2, F1=0.91151
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/5_plisson_manuelito_blondel_leveugle/pred_rg20090121_mask.png" title="Team 5, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/5_plisson_manuelito_blondel_leveugle/pred_rg20090520_mask.png" title="Team 5, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	Huguo Bui, F1=0.90933
+	</div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/6_gomes_aka_bui_alexialan/pred_rg20090121_mask.png" title="Team 6, first image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-4">
+		{% include figure.liquid path="assets/img/2024_deep_challenge/6_gomes_aka_bui_alexialan/pred_rg20090520_mask.png" title="Team 6, second image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 - 2023-2024 : we participated to the [GeoLifeClef 2022 challenge](https://www.kaggle.com/competitions/geolifeclef-2022-lifeclef-2022-fgvc9/overview), after the competition was over. The final leaderboard of the teams is shown below.
 
