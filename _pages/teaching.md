@@ -38,7 +38,6 @@ nav_order: 6
     </div>
 </div>
 
-
 - 2023-2024 : we participated to the [GeoLifeClef 2022 challenge](https://www.kaggle.com/competitions/geolifeclef-2022-lifeclef-2022-fgvc9/overview), after the competition was over. The final leaderboard of the teams is shown below.
 
 <div class="row">
