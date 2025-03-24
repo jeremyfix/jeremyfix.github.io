@@ -21,10 +21,10 @@ Basically, I had text like below and wanted to replace the backquote delimiter.
 | 0x24 | LDBd | 2 | Charge la valeur dans la RAM pointée par l'opérande dans le registre B. `[B := Mem[opérande]]` |
 ```
 
-Every string like `\`[A := operande]\`` was to be replaced by `{++[A := operande]++}`.
+Every string like `\`[A := operande]\``was to be replaced by`{++[A := operande]++}`.
 
 To do so with, it is as easy as 1) visually selecting the lines where you want a
-modification (Ctrl + V), and 2) press ":" followed by the magic recipe 
+modification (Ctrl + V), and 2) press ":" followed by the magic recipe
 
 ```
 s/`\(.*\)`/{++\1++}/g
@@ -32,9 +32,9 @@ s/`\(.*\)`/{++\1++}/g
 
 which stands for :
 
-- s .... g : substitue globally in the grammar  s/src_pattern/dst_pattern/g
+- s .... g : substitue globally in the grammar s/src_pattern/dst_pattern/g
 - the source pattern is a repetition of which ever character `.* ` we capture in
   a group by the surrounding \( and \); This source pattern is surrounded by the
-source delimiter, hence the backquotes
+  source delimiter, hence the backquotes
 - the target pattern is the new delimiters surrounding the group copy/pasted
   with the \1
