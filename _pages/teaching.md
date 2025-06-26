@@ -7,6 +7,32 @@ nav: true
 nav_order: 6
 ---
 
+# Architecture des ordinateurs (2025-)
+
+This course deals with computer architecture, starting with the transitor and gradually building up the various layers of abstraction to finally reach programming. We’ll see the building blocks of information routing (multiplexer), memory (flip-flops, registers) and information processing (arithmetic and logic units) enabling the creation of data paths and their sequencing. The course ends with the programming of the architecture built in a language close to assembler and the realization of a mini-game, and ends by opening perspectives towards operating systems. All practical exercises will be carried out in Logisim simulation.
+
+Full lecture is available on github [https://jeremyfix.github.io/Architecture/](https://jeremyfix.github.io/Architecture/)
+
+**Illustration of the implemented architecture**
+
+{% include video.liquid path="https://jeremyfix.github.io/Architecture/videos/archi-all.webm" title="Architecture running a sample code" class="video-fluid rounded z-depth-1" zoomable=true %}
+
+# Python for scientists (2025-)
+
+The aim of this teaching unit is to train students in the tools of the Python ecosystem for scientists. It covers the use of specialized libraries for a number of major themes: scientific computing with Numpy, signal processing with Scipy, managing and processing large volumes of data with pandas, formatting results with matplotlib and an introduction to machine learning with scikit-learn.
+
+Full lecture is available on github [https://jeremyfix.github.io/Python-for-scientists/](https://jeremyfix.github.io/Python-for-scientists/)
+
+# Free softwares for engineers (2025-)
+
+his course introduces the main tools of the free software world useful to an engineer. It covers the use of bash to interact with the system, the philosophy behind GNU tools and how to combine them (pipelines, IO redirection, etc.). We’ll also take a look at how to combine various tools (git, python, awk, sed, lynx, ffmpeg, make), using them to carry out two projects. Assessment will be based on the practical reports.
+
+Full lecture is available on github [https://jeremyfix.github.io/OutilsLibres/](https://jeremyfix.github.io/OutilsLibres/)
+
+**Illustration of a video produced during the lecture**
+
+{% include video.liquid path="https://youtu.be/tagmYHJ5Wxk" title="Mercury in front of the sun" %}
+
 # Deep learning - CentraleSupélec - SDI-M (2024-2025)
 
 ## Lectures
