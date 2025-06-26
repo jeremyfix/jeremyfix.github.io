@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-python-and-paraview-for-batch-processing",
+        },{id: "post-changing-surrounding-delimiters-in-vim",
+      
+        title: "Changing surrounding delimiters in VIM",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/vimdelimiter/";
+        
+      },
+    },{id: "post-python-and-paraview-for-batch-processing",
       
         title: "Python and Paraview for batch processing",
       
