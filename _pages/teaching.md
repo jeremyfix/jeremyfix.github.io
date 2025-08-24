@@ -46,6 +46,8 @@ All of this is implemented using ROS2 middleware and the PyTorch library. This i
 
 Full lecture is available on [https://ia2vr.gitlabpages.inria.fr/iliar/](https://ia2vr.gitlabpages.inria.fr/iliar/).
 
+{% include video.liquid path="assets/video/iliar.webm" title="Autocontrol of a car with a neural network" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+
 # Deep learning - CentraleSupélec - SDI-M (2024-2025)
 
 ## Lectures
