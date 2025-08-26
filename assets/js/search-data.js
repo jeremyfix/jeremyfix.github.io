@@ -37,7 +37,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-changing-surrounding-delimiters-in-vim",
+        },{id: "post-atomic-auto-encoders-for-learning-sparse-representations",
+      
+        title: "Atomic auto-encoders for learning sparse representations",
+      
+      description: "Using a specific type of auto-encoders to learn a sparse representation of your data",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/aaae/";
+        
+      },
+    },{id: "post-regularized-gradient-descent",
+      
+        title: "Regularized gradient descent",
+      
+      description: "Plug-and-play algorithms",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/rgd/";
+        
+      },
+    },{id: "post-test",
+      
+        title: "Test",
+      
+      description: "Simple test",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/test/";
+        
+      },
+    },{id: "post-changing-surrounding-delimiters-in-vim",
       
         title: "Changing surrounding delimiters in VIM",
       
