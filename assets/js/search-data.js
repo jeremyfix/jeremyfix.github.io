@@ -48,17 +48,6 @@ ninja.data = [{
           window.location.href = "/blog/2025/vimdelimiter/";
         
       },
-    },{id: "post-regularized-gradient-descent",
-      
-        title: "Regularized gradient descent",
-      
-      description: "Plug-and-play algorithms",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/rgd/";
-        
-      },
     },{id: "post-python-and-paraview-for-batch-processing",
       
         title: "Python and Paraview for batch processing",
