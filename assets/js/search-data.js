@@ -59,6 +59,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/aaae/";
         
       },
+    },{id: "post-job-token-permissions-to-access-registries",
+      
+        title: "Job token permissions to access registries",
+      
+      description: "How to allow a gitlab repository to access the container registry of another, private, repository",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/jobtoken/";
+        
+      },
     },{id: "post-regularized-gradient-descent",
       
         title: "Regularized gradient descent",
