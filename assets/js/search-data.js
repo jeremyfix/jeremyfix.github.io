@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-atomic-auto-encoders-for-learning-sparse-representations",
+        },{id: "post-rethinking-deep-vision-interpretability",
+      
+        title: "Rethinking deep vision interpretability",
+      
+      description: "Explainability with attribution is limited to indicate the where. Concept extraction allows to capture the what.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/interpretation/";
+        
+      },
+    },{id: "post-atomic-auto-encoders-for-learning-sparse-representations",
       
         title: "Atomic auto-encoders for learning sparse representations",
       
