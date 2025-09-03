@@ -9,8 +9,10 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-Below is a (partial) list of my publications. You may find the most up to date
+You may find the most up to date
 list on [https://cv.hal.science/fix-jeremy](https://cv.hal.science/fix-jeremy).
+
+<!-- **WARNING** Some publications below are not my work --> 
 
 <!-- Bibsearch Feature -->
 
@@ -18,6 +20,9 @@ list on [https://cv.hal.science/fix-jeremy](https://cv.hal.science/fix-jeremy).
 
 <div class="publications">
 
-{% bibliography %}
+<!-- To be fixed, some publications there are not my work. They appear here because I -->
+<!-- cite them in the posts ... and included in the master bib file. I need to find -->
+<!-- how to split the bib -->
+<!-- {% bibliography %} -->
 
 </div>
