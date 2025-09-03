@@ -16,13 +16,13 @@ list on [https://cv.hal.science/fix-jeremy](https://cv.hal.science/fix-jeremy).
 
 <!-- Bibsearch Feature -->
 
-{% include bib_search.liquid %}
+<!-- { include bib_search.liquid } -->
 
 <div class="publications">
 
 <!-- To be fixed, some publications there are not my work. They appear here because I -->
 <!-- cite them in the posts ... and included in the master bib file. I need to find -->
 <!-- how to split the bib -->
-<!-- {% bibliography %} -->
+<!-- { bibliography } -->
 
 </div>
