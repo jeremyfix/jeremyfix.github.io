@@ -12,7 +12,7 @@ nav_order: 2
 You may find the most up to date
 list on [https://cv.hal.science/fix-jeremy](https://cv.hal.science/fix-jeremy).
 
-<!-- **WARNING** Some publications below are not my work --> 
+<!-- **WARNING** Some publications below are not my work -->
 
 <!-- Bibsearch Feature -->
 
