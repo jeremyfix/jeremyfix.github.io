@@ -37,7 +37,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-rethinking-deep-vision-interpretability",
+        },{id: "post-customizing-neovim",
+      
+        title: "Customizing neovim",
+      
+      description: "A path toward customizing neovim",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/nvim/";
+        
+      },
+    },{id: "post-adb-commands-over-wifi",
+      
+        title: "Adb commands over wifi",
+      
+      description: "Easy sharing of files with your android phone",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/adb/";
+        
+      },
+    },{id: "post-rethinking-deep-vision-interpretability",
       
         title: "Rethinking deep vision interpretability",
       
