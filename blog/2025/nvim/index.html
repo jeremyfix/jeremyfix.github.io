@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
-</code></pre> <p>This will also trigger loading the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/vim-options.lua</code> and <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins.lua</code> files. The <code class="language-plaintext highlighter-rouge">vim-options</code> file contains some shortcuts, definitions of tabstop, expandtab, etc..</p> <p>The plugins file only contains <code class="language-plaintext highlighter-rouge">return {}</code> but I believe will trigger loading all the plugins in the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins</code> directory.</p> <h2 id="installing-a-nerd-font">Installing a Nerd Font</h2> <p>We can have very nice icons within nvim, especially with the Neotree plugin, after having installed a patched font from the <a href="https://www.nerdfonts.com/font-downloads" rel="external nofollow noopener" target="_blank">Nerd font project</a>. In my case, I just download the Ubuntu Nerd font. You have to :</p> <ul> <li>download the zip</li> <li>extract the zip into <code class="language-plaintext highlighter-rouge">.fonts/</code> </li> <li>run the command <code class="language-plaintext highlighter-rouge">fc-cache -fv</code> </li> </ul> <p>and that’s it. Combined with the <a href="https://github.com/nvim-neo-tree/neo-tree.nvim" rel="external nofollow noopener" target="_blank">nvim-neo-tree</a>, you get a nice file explorer. For the configuration of neo-tree, here is the <code class="language-plaintext highlighter-rouge">plugins/neo-tree.lua</code> file :</p> <pre><code class="language-.lua">return {
+</code></pre> <p>This will also trigger loading the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/vim-options.lua</code> and <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins.lua</code> files. The <code class="language-plaintext highlighter-rouge">vim-options</code> file contains some shortcuts, definitions of tabstop, expandtab, etc..</p> <p>The plugins file only contains <code class="language-plaintext highlighter-rouge">return {}</code> but I believe will trigger loading all the plugins in the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins</code> directory.</p> <p>Installing plugins is easy. You just add the lua files, close and reopen nvim and they will be cloned/installed/configured.</p> <h2 id="installing-a-nerd-font">Installing a Nerd Font</h2> <p>We can have very nice icons within nvim, especially with the Neotree plugin, after having installed a patched font from the <a href="https://www.nerdfonts.com/font-downloads" rel="external nofollow noopener" target="_blank">Nerd font project</a>. In my case, I just download the Ubuntu Nerd font. You have to :</p> <ul> <li>download the zip</li> <li>extract the zip into <code class="language-plaintext highlighter-rouge">.fonts/</code> </li> <li>run the command <code class="language-plaintext highlighter-rouge">fc-cache -fv</code> </li> </ul> <p>and that’s it. Combined with the <a href="https://github.com/nvim-neo-tree/neo-tree.nvim" rel="external nofollow noopener" target="_blank">nvim-neo-tree</a>, you get a nice file explorer. For the configuration of neo-tree, here is the <code class="language-plaintext highlighter-rouge">plugins/neo-tree.lua</code> file :</p> <pre><code class="language-.lua">return {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
 	dependencies = {
@@ -28,7 +28,18 @@ require("lazy").setup("plugins")
 		vim.keymap.set("n", "&lt;leader&gt;o", ":Neotree buffers reveal float&lt;CR&gt;", {})
 	end,
 }
-</code></pre> <p>Where my <code class="language-plaintext highlighter-rouge">&lt;leader&gt;o</code> shows the buffer list. I believe it is <code class="language-plaintext highlighter-rouge">devicons</code> that display the icons embedded in the patched font.</p> <h2 id="greeting-page-with-alpha">Greeting page with alpha</h2> <p>The <code class="language-plaintext highlighter-rouge">alpha-nvim</code> plugin configures the starting page of nvim</p> <h2 id="language-server-protocols">Language Server Protocols</h2> <p>LSP are the way to have custom functionalities depending on the language you are coding with. I used <a href="">nvim-lspconfig</a> with <a href="">mason.nvim</a> and <a href="">mason-lspconfig</a> doing the bridge. Following the README of <code class="language-plaintext highlighter-rouge">mason-lspconfig</code> and adding few LSP by default leads to the following <code class="language-plaintext highlighter-rouge">plugins/lsp-config.lua</code></p> <pre><code class="language-.lua">return
+</code></pre> <p>Where my <code class="language-plaintext highlighter-rouge">&lt;leader&gt;o</code> shows the buffer list. I believe it is <code class="language-plaintext highlighter-rouge">devicons</code> that display the icons embedded in the patched font.</p> <h2 id="greeting-page-with-alpha">Greeting page with alpha</h2> <p>The <code class="language-plaintext highlighter-rouge">alpha-nvim</code> plugin configures the starting page of nvim</p> <h2 id="color-theme">Color theme</h2> <p>The <a href="https://github.com/catppuccin/nvim" rel="external nofollow noopener" target="_blank">catpuccin.nvim</a> plugin offers a nice color theme. I’m using the mocha one, defined in the <code class="language-plaintext highlighter-rouge">plugins/catppuccin.lua</code> script :</p> <pre><code class="language-.lua">return {
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin-mocha"
+    end
+  }
+}
+</code></pre> <h2 id="language-server-protocols">Language Server Protocols</h2> <p>LSP are the way to have custom functionalities depending on the language you are coding with. I used <a href="">nvim-lspconfig</a> with <a href="">mason.nvim</a> and <a href="">mason-lspconfig</a> doing the bridge. Following the README of <code class="language-plaintext highlighter-rouge">mason-lspconfig</code> and adding few LSP by default leads to the following <code class="language-plaintext highlighter-rouge">plugins/lsp-config.lua</code></p> <pre><code class="language-.lua">return
 {
     "mason-org/mason-lspconfig.nvim",
     opts = {
@@ -39,6 +50,113 @@ require("lazy").setup("plugins")
         "neovim/nvim-lspconfig",
     },
 }
-</code></pre> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/adb/">Adb commands over wifi</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/interpretation/">Rethinking deep vision interpretability</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/aaae/">Atomic auto-encoders for learning sparse representations</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/jobtoken/">Job token permissions to access registries</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/rgd/">Regularized gradient descent</a> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Jeremy Fix. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?70d799092f862ad98c7876aa47712e20"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+</code></pre> <p>Here some language servers are defined by default by you can obviously add more. Just defining them there and, tadam, they auto install with the magic of these plugins.</p> <p>The plugin <a href="https://github.com/nvimtools/none-ls.nvim" rel="external nofollow noopener" target="_blank">none-ls.nvim</a> is also setup. I’m not yet sure but it allows to use pure lua scripts as LSP sources. I used the configuration I found somewhere, see below, I still need to dig into it.</p> <pre><code class="language-.lua">return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.erb_lint,
+        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.rubocop,
+      },
+    })
+
+    vim.keymap.set("n", "&lt;leader&gt;gf", vim.lsp.buf.format, {})
+  end,
+}
+</code></pre> <p>The lsp server will raise warning and errors. An easy way to see these warnings is to use the <a href="https://github.com/folke/trouble.nvim" rel="external nofollow noopener" target="_blank">trouble.nvim</a> plugin for which I defined the proposed configuration in <code class="language-plaintext highlighter-rouge">plugins/trouble.lua</code> :</p> <pre><code class="language-.lua">return {
+  "folke/trouble.nvim",
+  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  cmd = "Trouble",
+  keys = {
+    {
+      "&lt;leader&gt;xx",
+      "&lt;cmd&gt;Trouble diagnostics toggle&lt;cr&gt;",
+      desc = "Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xX",
+      "&lt;cmd&gt;Trouble diagnostics toggle filter.buf=0&lt;cr&gt;",
+      desc = "Buffer Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cs",
+      "&lt;cmd&gt;Trouble symbols toggle focus=false&lt;cr&gt;",
+      desc = "Symbols (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cl",
+      "&lt;cmd&gt;Trouble lsp toggle focus=false win.position=right&lt;cr&gt;",
+      desc = "LSP Definitions / references / ... (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xL",
+      "&lt;cmd&gt;Trouble loclist toggle&lt;cr&gt;",
+      desc = "Location List (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xQ",
+      "&lt;cmd&gt;Trouble qflist toggle&lt;cr&gt;",
+      desc = "Quickfix List (Trouble)",
+    },
+  },
+}
+</code></pre> <h2 id="edit-your-filesystem-as-a-nvim-buffer-with-oil">Edit your filesystem as a nvim buffer with oil</h2> <p>The <a href="https://github.com/stevearc/oil.nvim" rel="external nofollow noopener" target="_blank">oil.nvim</a> allows to edit (rename, create files, etc..) your filesystem as you would do in a normal buffer. You can configure it with <code class="language-plaintext highlighter-rouge">plugins/oil.lua</code> :</p> <pre><code class="language-.lua">return {
+  "stevearc/oil.nvim",
+  config = function()
+    local oil = require("oil")
+    oil.setup()
+    vim.keymap.set("n", "-", oil.toggle_float, {})
+  end,
+}
+</code></pre> <p>Then raise nvim as <code class="language-plaintext highlighter-rouge">nvim .</code> to open the current directory. You can navigate with <code class="language-plaintext highlighter-rouge">&lt;CR&gt;</code> or <code class="language-plaintext highlighter-rouge">-</code>, go into insert mode, change characters, etc.. and validate all these changes.</p> <h2 id="fuzzy-find-with-telescope">Fuzzy find with telescope</h2> <p>Using <a href="https://github.com/nvim-telescope/telescope.nvim" rel="external nofollow noopener" target="_blank">telescope.nvim</a> for fuzzy things :)</p> <h2 id="tools-for-programming">Tools for programming</h2> <p>In addition to LSP, I also configured <a href="https://github.com/nvim-treesitter/nvim-treesitter" rel="external nofollow noopener" target="_blank">nvim-treesitter</a>. I need to experiment with it.</p> <p>What about completion ? I’m using several plugins I found configured on one repo . I also need to customize this, maybe to have python snippets for example.</p> <p>The <code class="language-plaintext highlighter-rouge">plugins/completions.lua</code> is for now :</p> <pre><code class="language-.lua">return {
+  {
+    "hrsh7th/cmp-nvim-lsp"
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets",
+    },
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      local cmp = require("cmp")
+      require("luasnip.loaders.from_vscode").lazy_load()
+
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["&lt;C-b&gt;"] = cmp.mapping.scroll_docs(-4),
+          ["&lt;C-f&gt;"] = cmp.mapping.scroll_docs(4),
+          ["&lt;C-Space&gt;"] = cmp.mapping.complete(),
+          ["&lt;C-e&gt;"] = cmp.mapping.abort(),
+          ["&lt;CR&gt;"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
+          { name = "buffer" },
+        }),
+      })
+    end,
+  },
+}
+
+</code></pre> <h2 id="interfacing-with-git">Interfacing with GIT</h2> <p>You can use <a href="https://github.com/lewis6991/gitsigns.nvim" rel="external nofollow noopener" target="_blank">gitsigns</a> to have indications for modification, suppression, addition. You can also directly trigger blame, etc..</p> <p>You can also display what has chaned into the <code class="language-plaintext highlighter-rouge">trouble</code> plugin window, like with <code class="language-plaintext highlighter-rouge">:Gitsigns setloclist</code>. Within this window, you can switch from one modification to another.</p> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/adb/">Adb commands over wifi</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/interpretation/">Rethinking deep vision interpretability</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/aaae/">Atomic auto-encoders for learning sparse representations</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/jobtoken/">Job token permissions to access registries</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/rgd/">Regularized gradient descent</a> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Jeremy Fix. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?70d799092f862ad98c7876aa47712e20"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
     addBackToTop();
   </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>

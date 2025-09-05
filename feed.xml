@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://jeremyfix.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://jeremyfix.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-09-05T09:45:51+00:00</updated><id>https://jeremyfix.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Customizing neovim</title><link href="https://jeremyfix.github.io/blog/2025/nvim/" rel="alternate" type="text/html" title="Customizing neovim"/><published>2025-09-05T09:00:00+00:00</published><updated>2025-09-05T09:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/nvim</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/nvim/"><![CDATA[<p>After working for a while with vim, I’m currently giving a try to neovim. This blog post contains notes on my first steps and discovery of plugins. I believe I will pretty quickly forget about the steps I followed to set this up :)</p> <p>The <strong>rc</strong> file of neovim is a lua script <code class="language-plaintext highlighter-rouge">init.lua</code> you find in <code class="language-plaintext highlighter-rouge">.config/nvim/init.lua</code>. Mine is bascially only containing the plugin manager Lazy.nvim :</p> <pre><code class="language-.lua">local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://jeremyfix.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://jeremyfix.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-09-05T12:58:53+00:00</updated><id>https://jeremyfix.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Customizing neovim</title><link href="https://jeremyfix.github.io/blog/2025/nvim/" rel="alternate" type="text/html" title="Customizing neovim"/><published>2025-09-05T09:00:00+00:00</published><updated>2025-09-05T09:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/nvim</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/nvim/"><![CDATA[<p>After working for a while with vim, I’m currently giving a try to neovim. This blog post contains notes on my first steps and discovery of plugins. I believe I will pretty quickly forget about the steps I followed to set this up :)</p> <p>The <strong>rc</strong> file of neovim is a lua script <code class="language-plaintext highlighter-rouge">init.lua</code> you find in <code class="language-plaintext highlighter-rouge">.config/nvim/init.lua</code>. Mine is bascially only containing the plugin manager Lazy.nvim :</p> <pre><code class="language-.lua">local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
-</code></pre> <p>This will also trigger loading the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/vim-options.lua</code> and <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins.lua</code> files. The <code class="language-plaintext highlighter-rouge">vim-options</code> file contains some shortcuts, definitions of tabstop, expandtab, etc..</p> <p>The plugins file only contains <code class="language-plaintext highlighter-rouge">return {}</code> but I believe will trigger loading all the plugins in the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins</code> directory.</p> <h2 id="installing-a-nerd-font">Installing a Nerd Font</h2> <p>We can have very nice icons within nvim, especially with the Neotree plugin, after having installed a patched font from the <a href="https://www.nerdfonts.com/font-downloads">Nerd font project</a>. In my case, I just download the Ubuntu Nerd font. You have to :</p> <ul> <li>download the zip</li> <li>extract the zip into <code class="language-plaintext highlighter-rouge">.fonts/</code></li> <li>run the command <code class="language-plaintext highlighter-rouge">fc-cache -fv</code></li> </ul> <p>and that’s it. Combined with the <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">nvim-neo-tree</a>, you get a nice file explorer. For the configuration of neo-tree, here is the <code class="language-plaintext highlighter-rouge">plugins/neo-tree.lua</code> file :</p> <pre><code class="language-.lua">return {
+</code></pre> <p>This will also trigger loading the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/vim-options.lua</code> and <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins.lua</code> files. The <code class="language-plaintext highlighter-rouge">vim-options</code> file contains some shortcuts, definitions of tabstop, expandtab, etc..</p> <p>The plugins file only contains <code class="language-plaintext highlighter-rouge">return {}</code> but I believe will trigger loading all the plugins in the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins</code> directory.</p> <p>Installing plugins is easy. You just add the lua files, close and reopen nvim and they will be cloned/installed/configured.</p> <h2 id="installing-a-nerd-font">Installing a Nerd Font</h2> <p>We can have very nice icons within nvim, especially with the Neotree plugin, after having installed a patched font from the <a href="https://www.nerdfonts.com/font-downloads">Nerd font project</a>. In my case, I just download the Ubuntu Nerd font. You have to :</p> <ul> <li>download the zip</li> <li>extract the zip into <code class="language-plaintext highlighter-rouge">.fonts/</code></li> <li>run the command <code class="language-plaintext highlighter-rouge">fc-cache -fv</code></li> </ul> <p>and that’s it. Combined with the <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">nvim-neo-tree</a>, you get a nice file explorer. For the configuration of neo-tree, here is the <code class="language-plaintext highlighter-rouge">plugins/neo-tree.lua</code> file :</p> <pre><code class="language-.lua">return {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
 	dependencies = {
@@ -26,7 +26,18 @@ require("lazy").setup("plugins")
 		vim.keymap.set("n", "&lt;leader&gt;o", ":Neotree buffers reveal float&lt;CR&gt;", {})
 	end,
 }
-</code></pre> <p>Where my <code class="language-plaintext highlighter-rouge">&lt;leader&gt;o</code> shows the buffer list. I believe it is <code class="language-plaintext highlighter-rouge">devicons</code> that display the icons embedded in the patched font.</p> <h2 id="greeting-page-with-alpha">Greeting page with alpha</h2> <p>The <code class="language-plaintext highlighter-rouge">alpha-nvim</code> plugin configures the starting page of nvim</p> <h2 id="language-server-protocols">Language Server Protocols</h2> <p>LSP are the way to have custom functionalities depending on the language you are coding with. I used <a href="">nvim-lspconfig</a> with <a href="">mason.nvim</a> and <a href="">mason-lspconfig</a> doing the bridge. Following the README of <code class="language-plaintext highlighter-rouge">mason-lspconfig</code> and adding few LSP by default leads to the following <code class="language-plaintext highlighter-rouge">plugins/lsp-config.lua</code></p> <pre><code class="language-.lua">return
+</code></pre> <p>Where my <code class="language-plaintext highlighter-rouge">&lt;leader&gt;o</code> shows the buffer list. I believe it is <code class="language-plaintext highlighter-rouge">devicons</code> that display the icons embedded in the patched font.</p> <h2 id="greeting-page-with-alpha">Greeting page with alpha</h2> <p>The <code class="language-plaintext highlighter-rouge">alpha-nvim</code> plugin configures the starting page of nvim</p> <h2 id="color-theme">Color theme</h2> <p>The <a href="https://github.com/catppuccin/nvim">catpuccin.nvim</a> plugin offers a nice color theme. I’m using the mocha one, defined in the <code class="language-plaintext highlighter-rouge">plugins/catppuccin.lua</code> script :</p> <pre><code class="language-.lua">return {
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin-mocha"
+    end
+  }
+}
+</code></pre> <h2 id="language-server-protocols">Language Server Protocols</h2> <p>LSP are the way to have custom functionalities depending on the language you are coding with. I used <a href="">nvim-lspconfig</a> with <a href="">mason.nvim</a> and <a href="">mason-lspconfig</a> doing the bridge. Following the README of <code class="language-plaintext highlighter-rouge">mason-lspconfig</code> and adding few LSP by default leads to the following <code class="language-plaintext highlighter-rouge">plugins/lsp-config.lua</code></p> <pre><code class="language-.lua">return
 {
     "mason-org/mason-lspconfig.nvim",
     opts = {
@@ -37,7 +48,114 @@ require("lazy").setup("plugins")
         "neovim/nvim-lspconfig",
     },
 }
-</code></pre>]]></content><author><name></name></author><category term="nvim"/><category term="nvim"/><category term="init"/><category term="plugins"/><summary type="html"><![CDATA[A path toward customizing neovim]]></summary></entry><entry><title type="html">Adb commands over wifi</title><link href="https://jeremyfix.github.io/blog/2025/adb/" rel="alternate" type="text/html" title="Adb commands over wifi"/><published>2025-09-04T09:30:00+00:00</published><updated>2025-09-04T09:30:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/adb</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/adb/"><![CDATA[<p>I find it usually hard to share files between an android phone and my laptop. Through the bluetooth, for some reasons, the connection seems unstable and downloading, for example, images from the phone to the laptop does not work very well.</p> <p>An alternative is to connect to the phone over the wifi. To do so, you must enable the developper options of the android.</p> <p>You also need the <code class="language-plaintext highlighter-rouge">adb</code> tool on the laptop. On Ubuntu, it is available through apt :</p> <pre><code class="language-.bash">$ sudo apt install adb
+</code></pre> <p>Here some language servers are defined by default by you can obviously add more. Just defining them there and, tadam, they auto install with the magic of these plugins.</p> <p>The plugin <a href="https://github.com/nvimtools/none-ls.nvim">none-ls.nvim</a> is also setup. I’m not yet sure but it allows to use pure lua scripts as LSP sources. I used the configuration I found somewhere, see below, I still need to dig into it.</p> <pre><code class="language-.lua">return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.erb_lint,
+        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.rubocop,
+      },
+    })
+
+    vim.keymap.set("n", "&lt;leader&gt;gf", vim.lsp.buf.format, {})
+  end,
+}
+</code></pre> <p>The lsp server will raise warning and errors. An easy way to see these warnings is to use the <a href="https://github.com/folke/trouble.nvim">trouble.nvim</a> plugin for which I defined the proposed configuration in <code class="language-plaintext highlighter-rouge">plugins/trouble.lua</code> :</p> <pre><code class="language-.lua">return {
+  "folke/trouble.nvim",
+  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  cmd = "Trouble",
+  keys = {
+    {
+      "&lt;leader&gt;xx",
+      "&lt;cmd&gt;Trouble diagnostics toggle&lt;cr&gt;",
+      desc = "Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xX",
+      "&lt;cmd&gt;Trouble diagnostics toggle filter.buf=0&lt;cr&gt;",
+      desc = "Buffer Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cs",
+      "&lt;cmd&gt;Trouble symbols toggle focus=false&lt;cr&gt;",
+      desc = "Symbols (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cl",
+      "&lt;cmd&gt;Trouble lsp toggle focus=false win.position=right&lt;cr&gt;",
+      desc = "LSP Definitions / references / ... (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xL",
+      "&lt;cmd&gt;Trouble loclist toggle&lt;cr&gt;",
+      desc = "Location List (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xQ",
+      "&lt;cmd&gt;Trouble qflist toggle&lt;cr&gt;",
+      desc = "Quickfix List (Trouble)",
+    },
+  },
+}
+</code></pre> <h2 id="edit-your-filesystem-as-a-nvim-buffer-with-oil">Edit your filesystem as a nvim buffer with oil</h2> <p>The <a href="https://github.com/stevearc/oil.nvim">oil.nvim</a> allows to edit (rename, create files, etc..) your filesystem as you would do in a normal buffer. You can configure it with <code class="language-plaintext highlighter-rouge">plugins/oil.lua</code> :</p> <pre><code class="language-.lua">return {
+  "stevearc/oil.nvim",
+  config = function()
+    local oil = require("oil")
+    oil.setup()
+    vim.keymap.set("n", "-", oil.toggle_float, {})
+  end,
+}
+</code></pre> <p>Then raise nvim as <code class="language-plaintext highlighter-rouge">nvim .</code> to open the current directory. You can navigate with <code class="language-plaintext highlighter-rouge">&lt;CR&gt;</code> or <code class="language-plaintext highlighter-rouge">-</code>, go into insert mode, change characters, etc.. and validate all these changes.</p> <h2 id="fuzzy-find-with-telescope">Fuzzy find with telescope</h2> <p>Using <a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a> for fuzzy things :)</p> <h2 id="tools-for-programming">Tools for programming</h2> <p>In addition to LSP, I also configured <a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a>. I need to experiment with it.</p> <p>What about completion ? I’m using several plugins I found configured on one repo . I also need to customize this, maybe to have python snippets for example.</p> <p>The <code class="language-plaintext highlighter-rouge">plugins/completions.lua</code> is for now :</p> <pre><code class="language-.lua">return {
+  {
+    "hrsh7th/cmp-nvim-lsp"
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets",
+    },
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      local cmp = require("cmp")
+      require("luasnip.loaders.from_vscode").lazy_load()
+
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["&lt;C-b&gt;"] = cmp.mapping.scroll_docs(-4),
+          ["&lt;C-f&gt;"] = cmp.mapping.scroll_docs(4),
+          ["&lt;C-Space&gt;"] = cmp.mapping.complete(),
+          ["&lt;C-e&gt;"] = cmp.mapping.abort(),
+          ["&lt;CR&gt;"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
+          { name = "buffer" },
+        }),
+      })
+    end,
+  },
+}
+
+</code></pre> <h2 id="interfacing-with-git">Interfacing with GIT</h2> <p>You can use <a href="https://github.com/lewis6991/gitsigns.nvim">gitsigns</a> to have indications for modification, suppression, addition. You can also directly trigger blame, etc..</p> <p>You can also display what has chaned into the <code class="language-plaintext highlighter-rouge">trouble</code> plugin window, like with <code class="language-plaintext highlighter-rouge">:Gitsigns setloclist</code>. Within this window, you can switch from one modification to another.</p>]]></content><author><name></name></author><category term="nvim"/><category term="nvim"/><category term="init"/><category term="plugins"/><summary type="html"><![CDATA[A path toward customizing neovim]]></summary></entry><entry><title type="html">Adb commands over wifi</title><link href="https://jeremyfix.github.io/blog/2025/adb/" rel="alternate" type="text/html" title="Adb commands over wifi"/><published>2025-09-04T09:30:00+00:00</published><updated>2025-09-04T09:30:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/adb</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/adb/"><![CDATA[<p>I find it usually hard to share files between an android phone and my laptop. Through the bluetooth, for some reasons, the connection seems unstable and downloading, for example, images from the phone to the laptop does not work very well.</p> <p>An alternative is to connect to the phone over the wifi. To do so, you must enable the developper options of the android.</p> <p>You also need the <code class="language-plaintext highlighter-rouge">adb</code> tool on the laptop. On Ubuntu, it is available through apt :</p> <pre><code class="language-.bash">$ sudo apt install adb
 </code></pre> <p>Then, on the phone, you go to the “Wireless debugging” menu and pair a device with a code. You see a pair of IP and port, as well a code. Keep this in mind.</p> <p>On the laptop, you first pair your laptop with the device :</p> <pre><code class="language-.bash">adb pair IP:PORT
 </code></pre> <p>with the right IP/PORT. And you should be asked the code. Once paired, you should see something like</p> <pre><code class="language-.bash">$ adb pair 192.168.xx.xx:37159
 Enter pairing code: 807200
