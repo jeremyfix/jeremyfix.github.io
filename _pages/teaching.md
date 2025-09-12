@@ -48,6 +48,10 @@ Full lecture is available on [https://ia2vr.gitlabpages.inria.fr/iliar/](https:/
 
 {% include video.liquid path="assets/video/iliar.webm" title="Autocontrol of a car with a neural network" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
 
+# Deep learning - Master 2 IA2VR - Université de Lorraine (2024-)
+
+This course is an introduction to deep learning. The full lecture materials is available on [https://ia2vr.gitlabpages.inria.fr/deeplearning](https://ia2vr.gitlabpages.inria.fr/deeplearning).
+
 # Deep learning - CentraleSupélec - SDI-M (2024-2025)
 
 ## Lectures
