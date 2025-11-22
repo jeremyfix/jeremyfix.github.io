@@ -37,7 +37,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-customizing-neovim",
+        },{id: "post-liste-des-techniques-pour-l-39-uv2",
+      
+        title: "Liste des techniques pour l&#39;UV2",
+      
+      description: "Liste des techniques à réviser pour l&#39;UV2",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/uv2/";
+        
+      },
+    },{id: "post-end-of-support-for-volta-gpus-with-pytorch",
+      
+        title: "End of support for Volta GPUs with pytorch",
+      
+      description: "Latest pytorch versions stop supporting older GPUs",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/eolgpu/";
+        
+      },
+    },{id: "post-customizing-neovim",
       
         title: "Customizing neovim",
       
