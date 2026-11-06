@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://jeremyfix.github.io/sitemap.xml
