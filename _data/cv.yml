@@ -1,10 +1,8 @@
 cv:
   name: Jeremy Fix
-  label: Maître de conférence
+  headline: Maître de conférence
   email: jeremy.fix@centralesupelec.fr
   location: Metz, FR
-  image: ""
-  summary: Researcher in computer science applying machine learning methodologies to investigate topics on a variety of applications in ecology, radar imaging and forestry. I'm also passionated by emergent properties of large assemblies of interconnected simple entities.
 
   social_networks:
     - network: GitHub
@@ -12,11 +10,11 @@ cv:
     - network: LinkedIn
       username: jeremy-fix
 
-  address:
-    street: 2 rue édouard belin
-    city: Metz
-    postalCode: 57070
-    countryCode: FR
+  # address:
+  #   street: 2 rue édouard belin
+  #   city: Metz
+  #   postalCode: 57070
+  #   countryCode: FR
 
   sections:
     Education:
@@ -52,33 +50,6 @@ cv:
         location: Münster, Germany
         start_date: 2008
         end_date: 2009
-
-    # Volunteer:
-    #   - company: People's Climate March
-    #     position: Lead Organizer
-    #     location: Zurich, Switzerland
-    #     start_date: 2014-04-01
-    #     end_date: 2015-07-01
-    #     summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-    #     highlights:
-    #       - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-    #       - "Men of the year 2014 by Time magazine"
-
-    # Awards:
-    #   - title: Nobel Prize in Physics
-    #     authors:
-    #       - "Royal Swedish Academy of Sciences"
-    #     date: 1921-11-01
-    #     awarder: Royal Swedish Academy of Sciences
-    #     url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-    #     summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-    #
-    #   - title: Max Planck Medal
-    #     authors:
-    #       - "German Physical Society"
-    #     date: 2029
-    #     awarder: German Physical Society
-    #     summary: Awarded for outstanding scientific achievement
 
     # Publications:
     #   - title: Zur Elektrodynamik bewegter Körper
@@ -124,41 +95,20 @@ cv:
       - name: German
         summary: "Beginner"
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    # Certificates:
-    #   - name: Machine Learning
-    #     date: 2018-01-01
-    #     issuer: Stanford University
-    #     icon: fa-solid fa-location-dot
-    #
-    #   - name: Quantum Computing
-    #     date: 2018-01-01
-    #     issuer: Stanford University
-    #     icon: fa-solid fa-tag
-    #
-    #   - name: Quantum Information
-    #     date: 2018-01-01
-    #     issuer: Stanford University
-    #     icon: fa-solid fa-envelope
-    #
-    # Projects:
-    #   - name: Quantum Computing
-    #     summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-    #     highlights:
-    #       - Quantum Teleportation
-    #       - Quantum Cryptography
-    #     start_date: 2018-01-01
-    #     end_date: 2018-01-01
-    #
-    # References:
-    #   - name: Professor John Doe
-    #     icon: fa-solid fa-laptop
-    #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-    #
-    #   - name: Professor Jane Smith
-    #     icon: fa-solid fa-thumbtack
-    #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+  # Projects:
+  #   - name: Quantum Computing
+  #     summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+  #     highlights:
+  #       - Quantum Teleportation
+  #       - Quantum Cryptography
+  #     start_date: 2018-01-01
+  #     end_date: 2018-01-01
+  #
+  # References:
+  #   - name: Professor John Doe
+  #     icon: fa-solid fa-laptop
+  #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+  #
+  #   - name: Professor Jane Smith
+  #     icon: fa-solid fa-thumbtack
+  #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
