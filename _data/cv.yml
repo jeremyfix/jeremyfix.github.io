@@ -29,12 +29,11 @@ cv:
         end_date: 2008
 
     Experience:
-
       - company: CentraleSupélec
         position: Maître de conférence
         location: Metz, France
         start_date: 2013
-        end_date: 
+        end_date:
 
       - company: Supélec
         position: Maître de conférence
@@ -54,7 +53,6 @@ cv:
         start_date: 2008
         end_date: 2009
 
-        
     # Volunteer:
     #   - company: People's Climate March
     #     position: Lead Organizer
