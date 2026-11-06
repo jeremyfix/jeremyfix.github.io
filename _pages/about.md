@@ -35,12 +35,12 @@ latest_posts:
 
 **The website is currently being refactored to use the latest version of al-folio**
 
-I'm an assistant professor at [CentraleSupélec](https://www.centralesupelec.fr) and belong to the [LORIA](https://www.loria.fr) laboratory.
+I'm an assistant professor at [CentraleSupélec](https://www.centralesupelec.fr) and belong to the [LORIA](https://www.loria.fr) and [SONDRA](https://sondra.fr) laboratories.
 
 My current topics of research are in two different fields. On one side in
 computational neuroscience, investigating emergent properties of interconnected
 assemblies of simple units and on the other side on the development of machine
 learning based methodologies applied in different fields (e.g. forestry,
-ecology).
+ecology, radar imaging).
 
 This website is built using the [al-folio](https://github.com/alshedivat/al-folio) jekyll template.
