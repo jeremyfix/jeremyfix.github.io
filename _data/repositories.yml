@@ -9,3 +9,5 @@ github_repos:
   - jeremyfix/deeplearning_demos
   - jeremyfix/deeplearning-lectures
   - jeremyfix/pytorch_template_code
+  - jeremyfix/FFTConvolution
+  - jeremyfix/GrayScott
