@@ -1,669 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://jeremyfix.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://jeremyfix.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-11-08T14:18:54+00:00</updated><id>https://jeremyfix.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">a post with marimo snippets</title><link href="https://jeremyfix.github.io/blog/2025/marimo/" rel="alternate" type="text/html" title="a post with marimo snippets"/><published>2025-04-28T12:00:00+00:00</published><updated>2025-04-28T12:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/marimo</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/marimo/"><![CDATA[<p><a href="https://marimo.io">marimo</a> notebooks can run Python directly in the reader’s browser. Opt a page in from its front matter:</p> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s">a post with marimo snippets</span>
-<span class="na">marimo</span><span class="pi">:</span> <span class="kc">true</span>
-<span class="nn">---</span>
-</code></pre></div></div> <p>Nothing is loaded on pages without that flag, so bundling the plugin costs nothing site-wide.</p> <h2 id="runnable-snippets">Runnable snippets</h2> <p>Wrap fenced Python blocks in a container and the runtime turns them into an interactive notebook after the page loads:</p> <div class="al-marimo-inline"> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">marimo</span> <span class="k">as</span> <span class="n">mo</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://jeremyfix.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://jeremyfix.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-11-08T14:41:17+00:00</updated><id>https://jeremyfix.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Liste des techniques pour l’UV2</title><link href="https://jeremyfix.github.io/blog/2025/uv2/" rel="alternate" type="text/html" title="Liste des techniques pour l’UV2"/><published>2025-11-22T14:30:00+00:00</published><updated>2025-11-22T14:30:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/uv2</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/uv2/"><![CDATA[<p>Les textes officiels 2025-2026 sont disponibles sur le <a href="https://www.ffjudo.com/resource-file/document/1762434711_d4414043cbf6d8d8b626.pdf">site de la fédération</a></p> <p>Pour le passage de la 1ère dan, les techniques de l’UV2 sont listées ci-dessous avec les techniques :</p> <ul> <li><a href="#koshi-waza">Koshi-waza</a></li> <li><a href="#te-waza">Té-Waza</a></li> <li><a href="#ashi-waza">Ashi Waza</a></li> <li><a href="#sutemi-waza">Sutemi Waza</a></li> <li><a href="#osaekomi-waza-immobilisations">Osaekomi-Waza (immobilisations)</a></li> <li><a href="#shime-waza-étranglements">Shime-Waza (étranglements)</a></li> <li><a href="#kansetsu-waza-clés-aux-coudes">Kansetsu-Waza (clés aux coudes)</a></li> </ul> <h2 id="koshi-waza">Koshi-Waza</h2> <ul> <li><a href="#harai-goshi">Haraï-goshi</a></li> <li><a href="#kubi-nage">kubi-nage</a></li> <li><a href="#koshi-guruma">koshi-guruma</a></li> <li><a href="#o-goshi">o-goshi</a></li> <li><a href="#tsurikomi-goshi">tsurikomi-goshi</a></li> <li><a href="#uchi-mata">uchi-mata</a></li> <li><a href="#uki-goshi">uki-goshi</a></li> </ul> <h3 id="haraï-goshi">Haraï-goshi</h3> <p><a href="#koshi-waza">Remonter à la liste des Koshi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/qTo8HlAAkOo?si=hSF1u9tRXM9JcAFo">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/qTo8HlAAkOo?si=EMjTf3QCF0PNOLmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="kubi-nage">Kubi-nage</h3> <p><a href="#koshi-waza">Remonter à la liste des Koshi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/F-4fyNwx52w?si=J5kBPymkjONbh8h4">Efficient judo</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/F-4fyNwx52w?si=J5kBPymkjONbh8h4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="koshi-guruma">Koshi-guruma</h3> <p><a href="#koshi-waza">Remonter à la liste des Koshi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/SU7Id6uVJ44?si=pfLOd0LgO-FohWAQ">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/SU7Id6uVJ44?si=pfLOd0LgO-FohWAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="o-goshi">O-goshi</h3> <p><a href="#koshi-waza">Remonter à la liste des Koshi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/yhu1mfy2vJ4?si=fGX6M2_pxi4Rlt8A">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/yhu1mfy2vJ4?si=fGX6M2_pxi4Rlt8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="tsurikomi-goshi">Tsurikomi-goshi</h3> <p><a href="#koshi-waza">Remonter à la liste des Koshi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/McfzA0yRVt4?si=JhwjNDb7wV7M6qqw">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/McfzA0yRVt4?si=JhwjNDb7wV7M6qqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="uchi-mata">Uchi-mata</h3> <p><a href="#koshi-waza">Remonter à la liste des Koshi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/iUpSu5J-bgw?si=ByXGkkPbwRQj6Rso">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/iUpSu5J-bgw?si=ByXGkkPbwRQj6Rso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="uki-goshi">Uki-goshi</h3> <p><a href="#koshi-waza">Remonter à la liste des Koshi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/bPKwtB4lyOQ?si=TJa-tw3ZRXsaNlk0">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/bPKwtB4lyOQ?si=TJa-tw3ZRXsaNlk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h2 id="té-waza">Té-Waza</h2> <ul> <li><a href="#ippon-seoi-nage">Ippon-seoi-Nage</a></li> <li><a href="#kata-guruma">Kata-guruma</a></li> <li><a href="#uki-otoshi">Uki-otoshi</a></li> <li><a href="#tai-otoshi">Tai-otoshi</a></li> <li><a href="#morote-seoi-nage">Morote-seoi-nage</a></li> </ul> <h3 id="ippon-seoi-nage">Ippon-seoi-nage</h3> <p><a href="#te-waza">Remonter à la liste des Té-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/FQnOlCxo4oI?si=u2N26TfuRtb7JnfU">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/FQnOlCxo4oI?si=u2N26TfuRtb7JnfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="kata-guruma">Kata-guruma</h3> <p><a href="#te-waza">Remonter à la liste des Té-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/cnHRhSy8yi4?si=oAT8h19NecQgIU3L">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/cnHRhSy8yi4?si=oAT8h19NecQgIU3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="uki-otoshi">Uki-otoshi</h3> <p><a href="#te-waza">Remonter à la liste des Té-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/6H5tmncOY4Q?si=wWyxqRiKb8PXB3B-">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/6H5tmncOY4Q?si=wWyxqRiKb8PXB3B-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="tai-otoshi">Tai-otoshi</h3> <p><a href="#te-waza">Remonter à la liste des Té-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/4x6S3Q-Ktv8?si=KXesiDPqZ6s7bvNo">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/4x6S3Q-Ktv8?si=KXesiDPqZ6s7bvNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="morote-seoi-nage">Morote-seoi-nage</h3> <p><a href="#te-waza">Remonter à la liste des Té-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/zIq0xI0ogxk?si=tL7juQ6H_yKlh6ko">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/zIq0xI0ogxk?si=tL7juQ6H_yKlh6ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h2 id="ashi-waza">Ashi Waza</h2> <ul> <li><a href="#de-ashi-baraï-haraï">de-ashi-baraï (haraï)</a></li> <li><a href="#hiza-guruma">hiza-guruma</a></li> <li><a href="#sasae-tsurikomi-ashi">sasae-tsurikomi-ashi</a></li> <li><a href="#ko-soto-gari">ko-soto-gari</a></li> <li><a href="#ko-uchi-gari">ko-uchi-gari</a></li> <li><a href="#okuri-ashi-baraï-haraï">okuri-ashi-baraï (haraï)</a></li> <li><a href="#o-soto-gari">o-soto-gari</a></li> <li><a href="#o-uchi-gari">o-uchi-gari</a></li> <li><a href="#uchi-mata">uchi-mata</a></li> </ul> <h3 id="de-ashi-baraï-haraï">De-ashi-baraï (haraï)</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/4BUUvqxi_Kk?si=JgOs6IHB3iX-rPWd">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/4BUUvqxi_Kk?si=JgOs6IHB3iX-rPWd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="hiza-guruma">Hiza-guruma</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/JPJx9-oAVns?si=yglO9QVdGcLY14yI">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/JPJx9-oAVns?si=yglO9QVdGcLY14yI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="sasae-tsurikomi-ashi">Sasae-tsurikomi-ashi</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/699i--pvYmE?si=TarnL8uzw2-eGV9I">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/699i--pvYmE?si=TarnL8uzw2-eGV9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="ko-soto-gari">Ko-soto-gari</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/jeQ541ScLB4?si=W_jqR4AbTJDKNFR1">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/jeQ541ScLB4?si=W_jqR4AbTJDKNFR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="ko-uchi-gari">Ko-uchi-gari</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/3Jb3tZvr9Ng?si=EJBLnSAG5nqMtIOn">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/3Jb3tZvr9Ng?si=EJBLnSAG5nqMtIOn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="okuri-ashi-baraï-haraï">Okuri-ashi-baraï (haraï)</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/nw1ZdRjrdRI?si=nWl2SxidA7gVp3eZ">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/nw1ZdRjrdRI?si=nWl2SxidA7gVp3eZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="o-soto-gari">O-soto-gari</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/c-A_nP7mKAc?si=EquOXejg8oQ6NPD_">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/c-A_nP7mKAc?si=EquOXejg8oQ6NPD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="o-uchi-gari">O-uchi-gari</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/0itJFhV9pDQ?si=StFRi4FYabI6Ymqb">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/0itJFhV9pDQ?si=StFRi4FYabI6Ymqb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="uchi-mata-1">Uchi-mata</h3> <p><a href="#ashi-waza">Remonter à la liste des Ashi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/iUpSu5J-bgw?si=sLxDN-ZJcw6BrmbJ">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/iUpSu5J-bgw?si=sLxDN-ZJcw6BrmbJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h2 id="sutemi-waza">Sutemi Waza</h2> <ul> <li><a href="#sumi-gaeshi">Sumi-gaeshi</a></li> <li><a href="#tomoe-nage">Tomoe-nage</a></li> </ul> <h3 id="sumi-gaeshi">Sumi-gaeshi</h3> <p><a href="#sutemi-waza">Remonter à la liste des Sutemi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/5VhduA5xkbA?si=Nq5b-ls0Y3FNxszN">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/5VhduA5xkbA?si=Nq5b-ls0Y3FNxszN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="tomoe-nage">Tomoe-nage</h3> <p><a href="#sutemi-waza">Remonter à la liste des Sutemi Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/880WbHvHv6A?si=50CqoSzW0Ibp1K8N">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/880WbHvHv6A?si=50CqoSzW0Ibp1K8N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h2 id="osaekomi-waza-immobilisations">Osaekomi-Waza (immobilisations)</h2> <ul> <li><a href="#hon-gesa-gatame">Hon-gesa-gatame</a></li> <li><a href="#kami-shiho-gatame">Kami-shiho-gatame</a></li> <li><a href="#yoko-shiho-gatame">Yoko-shiho-gatame</a></li> <li><a href="#tate-shiho-gatame">Tate-shiho-gatame</a></li> <li><a href="#ushiro-gesa-gatame">Ushiro-gesa-gatame</a></li> </ul> <h3 id="hon-gesa-gatame">Hon-gesa-gatame</h3> <p><a href="#osaekomi-waza-immobilisations">Remonter à la liste des Osaekomi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/NDaQuJOFBYk?si=-Ku90iI5gztgLTNN">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/NDaQuJOFBYk?si=faX5tN6I-fB9y8IG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="kami-shiho-gatame">Kami-shiho-Gatame</h3> <p><a href="#osaekomi-waza-immobilisations">Remonter à la liste des Osaekomi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/HFuMjOv0WN8?si=eOxGIvwABX0FC1Iu">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/HFuMjOv0WN8?si=utGhkJDND-rDy4rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="yoko-shiho-gatame">Yoko-shiho-Gatame</h3> <p><a href="#osaekomi-waza-immobilisations">Remonter à la liste des Osaekomi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/TT7XJVSEQxA?si=iWuxt6zbKiYluh19">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/TT7XJVSEQxA?si=iWuxt6zbKiYluh19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="tate-shiho-gatame">Tate-shiho-gatame</h3> <p><a href="#osaekomi-waza-immobilisations">Remonter à la liste des Osaekomi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/55-rFmBx53g?si=UMWk0XBCgLP7poJE">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/55-rFmBx53g?si=UMWk0XBCgLP7poJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="ushiro-gesa-gatame">Ushiro-gesa-gatame</h3> <p><a href="#osaekomi-waza-immobilisations">Remonter à la liste des Osaekomi-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/SBapox2M2dE?si=K4XiyC-zPdbwFiPv">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/SBapox2M2dE?si=VUNEIBLrsWoWj0_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h2 id="shime-waza-étranglements">Shime-Waza (étranglements)</h2> <ul> <li><a href="#gyaku-juji-jime">Gyaku-juji-jime</a></li> <li><a href="#kata-juji-jime">Kata-juji-jime</a></li> <li><a href="#nami-juji-jime">Nami-juji-jime</a></li> <li><a href="#hadaka-jime">Hadaka-jime</a></li> <li><a href="#okuri-eri-jime">Okuri-eri-jime</a></li> </ul> <h3 id="gyaku-juji-jime">Gyaku-juji-jime</h3> <p><a href="#shime-waza-étranglements">Remonter à la liste des Shime-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/t3tQriIPdlI?si=WxzBetwYILMKep-i">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/t3tQriIPdlI?si=WxzBetwYILMKep-i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="kata-juji-jime">Kata-juji-jime</h3> <p><a href="#shime-waza-étranglements">Remonter à la liste des Shime-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/3VZVUAmiMD8?si=L3DFjSV2V3A0h7b1">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/3VZVUAmiMD8?si=L3DFjSV2V3A0h7b1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="nami-juji-jime">Nami-juji-jime</h3> <p><a href="#shime-waza-étranglements">Remonter à la liste des Shime-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/k2cHry9HByQ?si=bpfy-8hGNT_mqLkw">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/k2cHry9HByQ?si=bpfy-8hGNT_mqLkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="hadaka-jime">Hadaka-jime</h3> <p><a href="#shime-waza-étranglements">Remonter à la liste des Shime-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/9f0n8jez7iA?si=gdhrXzsnYvhiRBJW">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/9f0n8jez7iA?si=gdhrXzsnYvhiRBJW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="okuri-eri-jime">Okuri-eri-jime</h3> <p><a href="#shime-waza-étranglements">Remonter à la liste des Shime-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/EiqyoVcIAi8?si=Wwr7-pWa6sC6hszB">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/EiqyoVcIAi8?si=Wwr7-pWa6sC6hszB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h2 id="kansetsu-waza-clés-aux-coudes">Kansetsu-Waza (clés aux coudes)</h2> <ul> <li><a href="#de-hishigi-juji-gatame">Ude-hishigi-juji-gatame</a></li> <li><a href="#ude-hishigi-ude-gatame">Ude-hishigi-ude-gatame</a></li> <li><a href="#ude-garami">Ude-garami</a></li> </ul> <h3 id="ude-hishigi-juji-gatame">Ude-hishigi-juji-gatame</h3> <p><a href="#kansetsu-waza-clés-aux-coudes">Remonter à la liste des Kansetsu-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/OWgSOlCuMXw?si=iELlFEPrTXda5ldw">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/OWgSOlCuMXw?si=iELlFEPrTXda5ldw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="ude-hishigi-ude-gatame">Ude-hishigi-ude-gatame</h3> <p><a href="#kansetsu-waza-clés-aux-coudes">Remonter à la liste des Kansetsu-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/SBf0aTma1VI?si=ctDIdxZptXz64I_8">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/SBf0aTma1VI?si=ctDIdxZptXz64I_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> <h3 id="ude-garami">Ude-garami</h3> <p><a href="#kansetsu-waza-clés-aux-coudes">Remonter à la liste des Kansetsu-Waza</a></p> <p>Lien vers la vidéo <a href="https://youtu.be/AIlTvZb4RlE?si=SV6777TQKZj8W9iz">Kodokan</a></p> <iframe width="560" height="315" src="https://www.youtube.com/embed/AIlTvZb4RlE?si=SV6777TQKZj8W9iz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>]]></content><author><name></name></author><category term="judo"/><category term="uv2"/><category term="judo"/><summary type="html"><![CDATA[Liste des techniques à réviser pour l'UV2]]></summary></entry><entry><title type="html">End of support for Volta GPUs with pytorch</title><link href="https://jeremyfix.github.io/blog/2025/eolgpu/" rel="alternate" type="text/html" title="End of support for Volta GPUs with pytorch"/><published>2025-11-09T17:55:00+00:00</published><updated>2025-11-09T17:55:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/eolgpu</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/eolgpu/"><![CDATA[<p>Just noticed that the latest releases of pytorch, if installed using <code class="language-plaintext highlighter-rouge">pip</code>, do not support NVidia GPUs with Volta micro-architectures.</p> <p>A table mapping the pytorch version with the micro-architecture being supported is proposed on <a href="https://github.com/moi90/pytorch_compute_capabilities/blob/main/table_pip.md">https://github.com/moi90/pytorch_compute_capabilities/blob/main/table_pip.md</a>.</p> <p>Starting from version 2.8.0, NVidia GPUs such as 1080 and 1080Ti and basically all that have a <a href="https://en.wikipedia.org/wiki/CUDA">compute capability</a> lower than 7.0 are no more supported.</p>]]></content><author><name></name></author><category term="pytorch"/><category term="pytorch"/><category term="gpu"/><category term="nvidia"/><summary type="html"><![CDATA[Latest pytorch versions stop supporting older GPUs]]></summary></entry><entry><title type="html">Customizing neovim</title><link href="https://jeremyfix.github.io/blog/2025/nvim/" rel="alternate" type="text/html" title="Customizing neovim"/><published>2025-09-05T09:00:00+00:00</published><updated>2025-09-05T09:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/nvim</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/nvim/"><![CDATA[<p>After working for a while with vim, I’m currently giving a try to neovim. This blog post contains notes on my first steps and discovery of plugins. I believe I will pretty quickly forget about the steps I followed to set this up :)</p> <p>The <strong>rc</strong> file of neovim is a lua script <code class="language-plaintext highlighter-rouge">init.lua</code> you find in <code class="language-plaintext highlighter-rouge">.config/nvim/init.lua</code>. Mine is bascially only containing the plugin manager Lazy.nvim :</p> <pre><code class="language-.lua">local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
-<span class="n">slider</span> <span class="o">=</span> <span class="n">mo</span><span class="p">.</span><span class="n">ui</span><span class="p">.</span><span class="nf">slider</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">"</span><span class="s">n</span><span class="sh">"</span><span class="p">)</span>
-<span class="n">slider</span>
-</code></pre></div> </div> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mo</span><span class="p">.</span><span class="nf">md</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">The first </span><span class="si">{</span><span class="n">slider</span><span class="p">.</span><span class="n">value</span><span class="si">}</span><span class="s"> squares: </span><span class="si">{</span><span class="p">[</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">slider</span><span class="p">.</span><span class="n">value</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-</code></pre></div> </div> </div> <p>Until the runtime has moved those blocks into place the container stays hidden, so readers never see the raw source flash before it becomes a notebook.</p> <h2 id="embedding-a-hosted-notebook">Embedding a hosted notebook</h2> <p>If you already publish a notebook — on <code class="language-plaintext highlighter-rouge">marimo.app</code> or your own WASM host — embed it instead:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">al_marimo_embed</span><span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="s2">"https://marimo.app/l/your-notebook"</span><span class="w"> </span><span class="na">height</span><span class="o">=</span><span class="s2">"700px"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Sampling demo"</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>The frame is sandboxed <strong>without</strong> <code class="language-plaintext highlighter-rouge">allow-same-origin</code>, so the embedded notebook cannot reach this page’s storage or cookies.</p> <h2 id="a-note-on-what-this-loads">A note on what this loads</h2> <p>The <code class="language-plaintext highlighter-rouge">marimo-snippets</code> runtime is vendored into the plugin at a pinned version and served from your own site, rather than pulled from a CDN — so no third-party origin executes script in your readers’ pages. Running a notebook does contact marimo’s host, which is worth knowing before you opt a page in.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="code"/><category term="formatting"/><summary type="html"><![CDATA[running Python in the browser with marimo]]></summary></entry><entry><title type="html">a post with plotly.js</title><link href="https://jeremyfix.github.io/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js"/><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/plotly</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
-</span><span class="sb">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-plotly">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
+require("vim-options")
+require("lazy").setup("plugins")
+</code></pre> <p>This will also trigger loading the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/vim-options.lua</code> and <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins.lua</code> files. The <code class="language-plaintext highlighter-rouge">vim-options</code> file contains some shortcuts, definitions of tabstop, expandtab, etc..</p> <p>The plugins file only contains <code class="language-plaintext highlighter-rouge">return {}</code> but I believe will trigger loading all the plugins in the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins</code> directory.</p> <p>Installing plugins is easy. You just add the lua files, close and reopen nvim and they will be cloned/installed/configured.</p> <h2 id="installing-a-nerd-font">Installing a Nerd Font</h2> <p>We can have very nice icons within nvim, especially with the Neotree plugin, after having installed a patched font from the <a href="https://www.nerdfonts.com/font-downloads">Nerd font project</a>. In my case, I just download the Ubuntu Nerd font. You have to :</p> <ul> <li>download the zip</li> <li>extract the zip into <code class="language-plaintext highlighter-rouge">.fonts/</code></li> <li>run the command <code class="language-plaintext highlighter-rouge">fc-cache -fv</code></li> </ul> <p>and that’s it. Combined with the <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">nvim-neo-tree</a>, you get a nice file explorer. For the configuration of neo-tree, here is the <code class="language-plaintext highlighter-rouge">plugins/neo-tree.lua</code> file :</p> <pre><code class="language-.lua">return {
+	"nvim-neo-tree/neo-tree.nvim",
+	branch = "v3.x",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-tree/nvim-web-devicons",
+		"MunifTanjim/nui.nvim",
+	},
+	config = function()
+		vim.keymap.set("n", "&lt;C-n&gt;", ":Neotree filesystem reveal left&lt;CR&gt;", {})
+		vim.keymap.set("n", "&lt;leader&gt;o", ":Neotree buffers reveal float&lt;CR&gt;", {})
+	end,
 }
-</code></pre> <p>Also another example chart.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
-</span><span class="sb">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "mode": "markers"
-    },
-    {
-      "x": [2, 3, 4, 5],
-      "y": [16, 5, 11, 9],
-      "mode": "lines"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [12, 9, 15, 12],
-      "mode": "lines+markers"
-    }
-  ],
-  "layout": {
-    "title": {
-      "text": "Line and Scatter Plot"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>This is how it looks like:</p> <pre><code class="language-plotly">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "mode": "markers"
-    },
-    {
-      "x": [2, 3, 4, 5],
-      "y": [16, 5, 11, 9],
-      "mode": "lines"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [12, 9, 15, 12],
-      "mode": "lines+markers"
-    }
-  ],
-  "layout": {
-    "title": {
-      "text": "Line and Scatter Plot"
-    }
+</code></pre> <p>Where my <code class="language-plaintext highlighter-rouge">&lt;leader&gt;o</code> shows the buffer list. I believe it is <code class="language-plaintext highlighter-rouge">devicons</code> that display the icons embedded in the patched font.</p> <h2 id="greeting-page-with-alpha">Greeting page with alpha</h2> <p>The <code class="language-plaintext highlighter-rouge">alpha-nvim</code> plugin configures the starting page of nvim</p> <h2 id="color-theme">Color theme</h2> <p>The <a href="https://github.com/catppuccin/nvim">catpuccin.nvim</a> plugin offers a nice color theme. I’m using the mocha one, defined in the <code class="language-plaintext highlighter-rouge">plugins/catppuccin.lua</code> script :</p> <pre><code class="language-.lua">return {
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin-mocha"
+    end
   }
 }
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included plotly.js code could look like]]></summary></entry><entry><title type="html">a post with image galleries</title><link href="https://jeremyfix.github.io/blog/2024/photo-gallery/" rel="alternate" type="text/html" title="a post with image galleries"/><published>2024-12-04T01:59:00+00:00</published><updated>2024-12-04T01:59:00+00:00</updated><id>https://jeremyfix.github.io/blog/2024/photo-gallery</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/photo-gallery/"><![CDATA[<p>The images in this post are all zoomable, arranged into different mini-galleries using different libraries.</p> <h2 id="lightbox2">Lightbox2</h2> <p><a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p> <hr/> <h2 id="photoswipe"><a href="https://photoswipe.com/">PhotoSwipe</a></h2> <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started"> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt=""/> </a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" data-pswp-width="1875" data-pswp-height="2500" data-cropped="true" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt=""/> </a> <a href="https://unsplash.com" data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1666" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt=""/> </a> <div> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1667" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt=""/> </a> </div> </div> <hr/> <h2 id="spotlight-js"><a href="https://nextapps-de.github.io/spotlight/">Spotlight JS</a></h2> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/> </a> </div> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg"/> </a> </div> <hr/> <h2 id="venobox"><a href="https://veno.es/venobox/">Venobox</a></h2> <p><a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what included image galleries could look like]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://jeremyfix.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[<p>Gemini breaks new ground with a faster model, longer context, AI agents and moreLearn more:Learn more:Learn more:Models &amp; ResearchProductsInfrastructure &amp; cloudTechnology Learn more: ProductsPlatformsDevices Learn more: Outreach &amp; initiativesLeadershipInside Google Learn more: May 14, 2024 We’re introducing a series of updates across the Gemini family of models, including the new 1.5 Flash, our lightweight model for speed and efficiency, and Project Astra, our vision for the future of AI assistants. Demis HassabisCEO of Google DeepMind, on behalf of the Gemini teamIn December, we launched our first natively multimodal model Gemini 1.0 in three sizes: Ultra, Pro and Nano. Just a few months later we released 1.5 Pro, with enhanced performance and a breakthrough long context window of 1 million tokens.Developers and enterprise customers have been putting 1.5 Pro to use in incredible ways and finding its long context window, multimodal reasoning capabilities and impressive overall performance incredibly useful.We know from user feedback that some applications need lower latency and a lower cost to serve. This inspired us to keep innovating, so today, we’re introducing Gemini 1.5 Flash: a model that’s lighter-weight than 1.5 Pro, and designed to be fast and efficient to serve at scale.Both 1.5 Pro and 1.5 Flash are available in public preview with a 1 million token context window in Google AI Studio and Vertex AI. And now, 1.5 Pro is also available with a 2 million token context window via waitlist to developers using the API and to Google Cloud customers.We’re also introducing updates across the Gemini family of models, announcing our next generation of open models, Gemma 2, and sharing progress on the future of AI assistants, with Project Astra.Context lengths of leading foundation models compared with Gemini 1.5’s 2 million token capability1.5 Flash is the newest addition to the Gemini model family and the fastest Gemini model served in the API. It’s optimized for high-volume, high-frequency tasks at scale, is more cost-efficient to serve and features our breakthrough long context window.While it’s a lighter weight model than 1.5 Pro, it’s highly capable of multimodal reasoning across vast amounts of information and delivers impressive quality for its size.The new Gemini 1.5 Flash model is optimized for speed and efficiency, is highly capable of multimodal reasoning and features our breakthrough long context window.1.5 Flash excels at summarization, chat applications, image and video captioning, data extraction from long documents and tables, and more. This is because it’s been trained by 1.5 Pro through a process called “distillation,” where the most essential knowledge and skills from a larger model are transferred to a smaller, more efficient model.Read more about 1.5 Flash in our updated Gemini 1.5 technical report, on the Gemini technology page, and learn about 1.5 Flash’s availability and pricing.Over the last few months, we’ve significantly improved 1.5 Pro, our best model for general performance across a wide range of tasks.Beyond extending its context window to 2 million tokens, we’ve enhanced its code generation, logical reasoning and planning, multi-turn conversation, and audio and image understanding through data and algorithmic advances. We see strong improvements on public and internal benchmarks for each of these tasks.1.5 Pro can now follow increasingly complex and nuanced instructions, including ones that specify product-level behavior involving role, format and style. We’ve improved control over the model’s responses for specific use cases, like crafting the persona and response style of a chat agent or automating workflows through multiple function calls. And we’ve enabled users to steer model behavior by setting system instructions.We added audio understanding in the Gemini API and Google AI Studio, so 1.5 Pro can now reason across image and audio for videos uploaded in Google AI Studio. And we’re now integrating 1.5 Pro into Google products, including Gemini Advanced and in Workspace apps.Read more about 1.5 Pro in our updated Gemini 1.5 technical report and on the Gemini technology page.Gemini Nano is expanding beyond text-only inputs to include images as well. Starting with Pixel, applications using Gemini Nano with Multimodality will be able to understand the world the way people do — not just through text, but also through sight, sound and spoken language.Read more about Gemini 1.0 Nano on Android.Today, we’re also sharing a series of updates to Gemma, our family of open models built from the same research and technology used to create the Gemini models.We’re announcing Gemma 2, our next generation of open models for responsible AI innovation. Gemma 2 has a new architecture designed for breakthrough performance and efficiency, and will be available in new sizes.The Gemma family is also expanding with PaliGemma, our first vision-language model inspired by PaLI-3. And we’ve upgraded our Responsible Generative AI Toolkit with LLM Comparator for evaluating the quality of model responses.Read more on the Developer blog.As part of Google DeepMind’s mission to build AI responsibly to benefit humanity, we’ve always wanted to develop universal AI agents that can be helpful in everyday life. That’s why today, we’re sharing our progress in building the future of AI assistants with Project Astra (advanced seeing and talking responsive agent).To be truly useful, an agent needs to understand and respond to the complex and dynamic world just like people do — and take in and remember what it sees and hears to understand context and take action. It also needs to be proactive, teachable and personal, so users can talk to it naturally and without lag or delay.While we’ve made incredible progress developing AI systems that can understand multimodal information, getting response time down to something conversational is a difficult engineering challenge. Over the past few years, we’ve been working to improve how our models perceive, reason and converse to make the pace and quality of interaction feel more natural.Building on Gemini, we’ve developed prototype agents that can process information faster by continuously encoding video frames, combining the video and speech input into a timeline of events, and caching this information for efficient recall.By leveraging our leading speech models, we also enhanced how they sound, giving the agents a wider range of intonations. These agents can better understand the context they’re being used in, and respond quickly, in conversation.With technology like this, it’s easy to envision a future where people could have an expert AI assistant by their side, through a phone or glasses. And some of these capabilities are coming to Google products, like the Gemini app and web experience, later this year.We’ve made incredible progress so far with our family of Gemini models, and we’re always striving to advance the state-of-the-art even further. By investing in a relentless production line of innovation, we’re able to explore new ideas at the frontier, while also unlocking the possibility of new and exciting Gemini use cases.Learn more about Gemini and its capabilities.Collection Sign up for our newsletters with product updates, event information, special offers, and more. Done. Just one step more. Check your inbox to confirm your subscription.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You can also subscribe with a different email address.
-  
-        Your information will be used in accordance with Google's privacy policy. You may opt out at any time.
-</code></pre></div></div>]]></content><author><name></name></author><category term="external-posts"/><category term="google"/><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">a post with tabs</title><link href="https://jeremyfix.github.io/blog/2024/tabs/" rel="alternate" type="text/html" title="a post with tabs"/><published>2024-05-01T00:32:13+00:00</published><updated>2024-05-01T00:32:13+00:00</updated><id>https://jeremyfix.github.io/blog/2024/tabs</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/tabs/"><![CDATA[<p>This is how a post with <a href="https://github.com/Ovski4/jekyll-tabs">tabs</a> looks like. Note that the tabs could be used for different purposes, not only for code.</p> <h2 id="first-tabs">First tabs</h2> <p>To add tabs, use the following syntax:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">tabs</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre> <h2 id="language-server-protocols">Language Server Protocols</h2> <p>LSP are the way to have custom functionalities depending on the language you are coding with. I used <a href="">nvim-lspconfig</a> with <a href="">mason.nvim</a> and <a href="">mason-lspconfig</a> doing the bridge. Following the README of <code class="language-plaintext highlighter-rouge">mason-lspconfig</code> and adding few LSP by default leads to the following <code class="language-plaintext highlighter-rouge">plugins/lsp-config.lua</code></p> <pre><code class="language-.lua">return
+{
+    "mason-org/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = { "lua_ls", "rust_analyzer", "basedpyright" }
+    },
+    dependencies = {
+        { "mason-org/mason.nvim", opts = {} },
+        "neovim/nvim-lspconfig",
+    },
+}
+</code></pre> <p>Here some language servers are defined by default by you can obviously add more. Just defining them there and, tadam, they auto install with the magic of these plugins.</p> <p>The plugin <a href="https://github.com/nvimtools/none-ls.nvim">none-ls.nvim</a> is also setup. I’m not yet sure but it allows to use pure lua scripts as LSP sources. I used the configuration I found somewhere, see below, I still need to dig into it.</p> <pre><code class="language-.lua">return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.erb_lint,
+        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.rubocop,
+      },
+    })
 
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-1</span><span class="w"> </span><span class="cp">%}</span>
+    vim.keymap.set("n", "&lt;leader&gt;gf", vim.lsp.buf.format, {})
+  end,
+}
+</code></pre> <p>The lsp server will raise warning and errors. An easy way to see these warnings is to use the <a href="https://github.com/folke/trouble.nvim">trouble.nvim</a> plugin for which I defined the proposed configuration in <code class="language-plaintext highlighter-rouge">plugins/trouble.lua</code> :</p> <pre><code class="language-.lua">return {
+  "folke/trouble.nvim",
+  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  cmd = "Trouble",
+  keys = {
+    {
+      "&lt;leader&gt;xx",
+      "&lt;cmd&gt;Trouble diagnostics toggle&lt;cr&gt;",
+      desc = "Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xX",
+      "&lt;cmd&gt;Trouble diagnostics toggle filter.buf=0&lt;cr&gt;",
+      desc = "Buffer Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cs",
+      "&lt;cmd&gt;Trouble symbols toggle focus=false&lt;cr&gt;",
+      desc = "Symbols (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cl",
+      "&lt;cmd&gt;Trouble lsp toggle focus=false win.position=right&lt;cr&gt;",
+      desc = "LSP Definitions / references / ... (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xL",
+      "&lt;cmd&gt;Trouble loclist toggle&lt;cr&gt;",
+      desc = "Location List (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xQ",
+      "&lt;cmd&gt;Trouble qflist toggle&lt;cr&gt;",
+      desc = "Quickfix List (Trouble)",
+    },
+  },
+}
+</code></pre> <h2 id="edit-your-filesystem-as-a-nvim-buffer-with-oil">Edit your filesystem as a nvim buffer with oil</h2> <p>The <a href="https://github.com/stevearc/oil.nvim">oil.nvim</a> allows to edit (rename, create files, etc..) your filesystem as you would do in a normal buffer. You can configure it with <code class="language-plaintext highlighter-rouge">plugins/oil.lua</code> :</p> <pre><code class="language-.lua">return {
+  "stevearc/oil.nvim",
+  config = function()
+    local oil = require("oil")
+    oil.setup()
+    vim.keymap.set("n", "-", oil.toggle_float, {})
+  end,
+}
+</code></pre> <p>Then raise nvim as <code class="language-plaintext highlighter-rouge">nvim .</code> to open the current directory. You can navigate with <code class="language-plaintext highlighter-rouge">&lt;CR&gt;</code> or <code class="language-plaintext highlighter-rouge">-</code>, go into insert mode, change characters, etc.. and validate all these changes.</p> <h2 id="fuzzy-find-with-telescope">Fuzzy find with telescope</h2> <p>Using <a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a> for fuzzy things :)</p> <h2 id="tools-for-programming">Tools for programming</h2> <p>In addition to LSP, I also configured <a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a>. I need to experiment with it.</p> <p>What about completion ? I’m using several plugins I found configured on one repo . I also need to customize this, maybe to have python snippets for example.</p> <p>The <code class="language-plaintext highlighter-rouge">plugins/completions.lua</code> is for now :</p> <pre><code class="language-.lua">return {
+  {
+    "hrsh7th/cmp-nvim-lsp"
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets",
+    },
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      local cmp = require("cmp")
+      require("luasnip.loaders.from_vscode").lazy_load()
 
-Content 1
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["&lt;C-b&gt;"] = cmp.mapping.scroll_docs(-4),
+          ["&lt;C-f&gt;"] = cmp.mapping.scroll_docs(4),
+          ["&lt;C-Space&gt;"] = cmp.mapping.complete(),
+          ["&lt;C-e&gt;"] = cmp.mapping.abort(),
+          ["&lt;CR&gt;"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
+          { name = "buffer" },
+        }),
+      })
+    end,
+  },
+}
 
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-2</span><span class="w"> </span><span class="cp">%}</span>
-
-Content 2
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="93622f7f-fc66-4c05-9780-5492cea25c89" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="93622f7f-fc66-4c05-9780-5492cea25c89" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
-</code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
-</code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="a5e7cc7d-de47-4a59-919d-7029d8c58398" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="a5e7cc7d-de47-4a59-919d-7029d8c58398" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
-</code></pre></div></div> </li> <li> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="19536ddb-c8cc-4cc4-8497-d26fe807fc21" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="19536ddb-c8cc-4cc4-8497-d26fe807fc21" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://jeremyfix.github.io/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://jeremyfix.github.io/blog/2024/typograms</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
-</span><span class="sb">+----+
-|    |---&gt; My first diagram!
-+----+</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-typograms">+----+
-|    |---&gt; My first diagram!
-+----+
-</code></pre> <p>Another example:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
-</span><span class="sb">.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>which generates:</p> <pre><code class="language-typograms">.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.
-</code></pre> <p>For more examples, check out the <a href="https://google.github.io/typograms/#examples">typograms documentation</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="diagrams"/><summary type="html"><![CDATA[this is what included typograms code could look like]]></summary></entry><entry><title type="html">a post that can be cited</title><link href="https://jeremyfix.github.io/blog/2024/post-citation/" rel="alternate" type="text/html" title="a post that can be cited"/><published>2024-04-28T15:06:00+00:00</published><updated>2024-04-28T15:06:00+00:00</updated><id>https://jeremyfix.github.io/blog/2024/post-citation</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/post-citation/"><![CDATA[<p>This is an example post that can be cited. The content of the post ends here, while the citation information is automatically provided below. The only thing needed is for you to set the <code class="language-plaintext highlighter-rouge">citation</code> key in the front matter to <code class="language-plaintext highlighter-rouge">true</code>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="citation"/><summary type="html"><![CDATA[this is what a post that can be cited looks like]]></summary></entry><entry><title type="html">a post with pseudo code</title><link href="https://jeremyfix.github.io/blog/2024/pseudocode/" rel="alternate" type="text/html" title="a post with pseudo code"/><published>2024-04-15T00:01:00+00:00</published><updated>2024-04-15T00:01:00+00:00</updated><id>https://jeremyfix.github.io/blog/2024/pseudocode</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/pseudocode/"><![CDATA[<p>This is an example post with some pseudo code rendered by <a href="https://github.com/SaswatPadhi/pseudocode.js">pseudocode</a>. The example presented here is the same as the one in the <a href="https://saswat.padhi.me/pseudocode.js/">pseudocode.js</a> documentation, with only one simple but important change: everytime you would use <code class="language-plaintext highlighter-rouge">$</code>, you should use <code class="language-plaintext highlighter-rouge">$$</code> instead. Also, note that the <code class="language-plaintext highlighter-rouge">pseudocode</code> key in the front matter is set to <code class="language-plaintext highlighter-rouge">true</code> to enable the rendering of pseudo code. As an example, using this code:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">pseudocode
-</span><span class="sb">% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
-\begin{algorithm}
-\caption{Quicksort}
-\begin{algorithmic}
-\PROCEDURE{Quicksort}{$$A, p, r$$}
-    \IF{$$p &lt; r$$}
-        \STATE $$q = $$ \CALL{Partition}{$$A, p, r$$}
-        \STATE \CALL{Quicksort}{$$A, p, q - 1$$}
-        \STATE \CALL{Quicksort}{$$A, q + 1, r$$}
-    \ENDIF
-\ENDPROCEDURE
-\PROCEDURE{Partition}{$$A, p, r$$}
-    \STATE $$x = A[r]$$
-    \STATE $$i = p - 1$$
-    \FOR{$$j = p$$ \TO $$r - 1$$}
-        \IF{$$A[j] &lt; x$$}
-            \STATE $$i = i + 1$$
-            \STATE exchange
-            $$A[i]$$ with $$A[j]$$
-        \ENDIF
-        \STATE exchange $$A[i]$$ with $$A[r]$$
-    \ENDFOR
-\ENDPROCEDURE
-\end{algorithmic}
-\end{algorithm}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Generates:</p> <pre><code class="language-pseudocode">% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
-\begin{algorithm}
-\caption{Quicksort}
-\begin{algorithmic}
-\PROCEDURE{Quicksort}{$$A, p, r$$}
-    \IF{$$p &lt; r$$}
-        \STATE $$q = $$ \CALL{Partition}{$$A, p, r$$}
-        \STATE \CALL{Quicksort}{$$A, p, q - 1$$}
-        \STATE \CALL{Quicksort}{$$A, q + 1, r$$}
-    \ENDIF
-\ENDPROCEDURE
-\PROCEDURE{Partition}{$$A, p, r$$}
-    \STATE $$x = A[r]$$
-    \STATE $$i = p - 1$$
-    \FOR{$$j = p$$ \TO $$r - 1$$}
-        \IF{$$A[j] &lt; x$$}
-            \STATE $$i = i + 1$$
-            \STATE exchange
-            $$A[i]$$ with $$A[j]$$
-        \ENDIF
-        \STATE exchange $$A[i]$$ with $$A[r]$$
-    \ENDFOR
-\ENDPROCEDURE
-\end{algorithmic}
-\end{algorithm}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included pseudo code could look like]]></summary></entry><entry><title type="html">a post with code diff</title><link href="https://jeremyfix.github.io/blog/2024/code-diff/" rel="alternate" type="text/html" title="a post with code diff"/><published>2024-01-27T19:22:00+00:00</published><updated>2024-01-27T19:22:00+00:00</updated><id>https://jeremyfix.github.io/blog/2024/code-diff</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/code-diff/"><![CDATA[<p>You can display diff code by using the regular markdown syntax:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff
-</span><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")
-</span></code></pre></div></div> <p>But this is difficult to read, specially if you have a large diff. You can use <a href="https://diff2html.xyz/">diff2html</a> to display a more readable version of the diff. For this, just use <code class="language-plaintext highlighter-rouge">diff2html</code> instead of <code class="language-plaintext highlighter-rouge">diff</code> for the code block language:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff2html
-</span><span class="sb">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
---- a/sample.js
-+++ b/sample.js
-@@ -1 +1 @@
--console.log("Hello World!")
-+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>If we use a longer example, for example <a href="https://github.com/rtfpessoa/diff2html/commit/c2c253d3e3f8b8b267f551e659f72b44ca2ac927">this commit from diff2html</a>, it will generate the following output:</p> <pre><code class="language-diff2html">From 2aaae31cc2a37bfff83430c2c914b140bee59b6a Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sun, 9 Oct 2016 16:41:54 +0100
-Subject: [PATCH 1/2] Initial template override support
-
----
- scripts/hulk.js                    |  4 ++--
- src/diff2html.js                   |  3 +--
- src/file-list-printer.js           | 11 ++++++++---
- src/hoganjs-utils.js               | 29 +++++++++++++++++------------
- src/html-printer.js                |  6 ++++++
- src/line-by-line-printer.js        |  6 +++++-
- src/side-by-side-printer.js        |  6 +++++-
- test/file-list-printer-tests.js    |  2 +-
- test/hogan-cache-tests.js          | 18 +++++++++++++++---
- test/line-by-line-tests.js         |  3 +--
- test/side-by-side-printer-tests.js |  3 +--
- 11 files changed, 62 insertions(+), 29 deletions(-)
-
-diff --git a/scripts/hulk.js b/scripts/hulk.js
-index 5a793c18..a4b1a4d5 100755
---- a/scripts/hulk.js
-+++ b/scripts/hulk.js
-@@ -173,11 +173,11 @@ function namespace(name) {
- // write a template foreach file that matches template extension
- templates = extractFiles(options.argv.remain)
-   .map(function(file) {
--    var openedFile = fs.readFileSync(file, 'utf-8');
-+    var openedFile = fs.readFileSync(file, 'utf-8').trim();
-     var name;
-     if (!openedFile) return;
-     name = namespace(path.basename(file).replace(/\..*$/, ''));
--    openedFile = removeByteOrderMark(openedFile.trim());
-+    openedFile = removeByteOrderMark(openedFile);
-     openedFile = wrap(file, name, openedFile);
-     if (!options.outputdir) return openedFile;
-     fs.writeFileSync(path.join(options.outputdir, name + '.js')
-diff --git a/src/diff2html.js b/src/diff2html.js
-index 21b0119e..64e138f5 100644
---- a/src/diff2html.js
-+++ b/src/diff2html.js
-@@ -7,7 +7,6 @@
-
- (function() {
-   var diffParser = require('./diff-parser.js').DiffParser;
--  var fileLister = require('./file-list-printer.js').FileListPrinter;
-   var htmlPrinter = require('./html-printer.js').HtmlPrinter;
-
-   function Diff2Html() {
-@@ -43,7 +42,7 @@
-
-     var fileList = '';
-     if (configOrEmpty.showFiles === true) {
--      fileList = fileLister.generateFileList(diffJson, configOrEmpty);
-+      fileList = htmlPrinter.generateFileListSummary(diffJson, configOrEmpty);
-     }
-
-     var diffOutput = '';
-diff --git a/src/file-list-printer.js b/src/file-list-printer.js
-index e408d9b2..1e0a2c61 100644
---- a/src/file-list-printer.js
-+++ b/src/file-list-printer.js
-@@ -8,11 +8,16 @@
- (function() {
-   var printerUtils = require('./printer-utils.js').PrinterUtils;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var baseTemplatesPath = 'file-summary';
-   var iconsBaseTemplatesPath = 'icon';
-
--  function FileListPrinter() {
-+  function FileListPrinter(config) {
-+    this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   FileListPrinter.prototype.generateFileList = function(diffFiles) {
-@@ -38,5 +43,5 @@
-     });
-   };
-
--  module.exports.FileListPrinter = new FileListPrinter();
-+  module.exports.FileListPrinter = FileListPrinter;
- })();
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 9949e5fa..0dda08d7 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -8,18 +8,19 @@
- (function() {
-   var fs = require('fs');
-   var path = require('path');
--
-   var hogan = require('hogan.js');
-
-   var hoganTemplates = require('./templates/diff2html-templates.js');
-
--  var templatesPath = path.resolve(__dirname, 'templates');
-+  var extraTemplates;
-
--  function HoganJsUtils() {
-+  function HoganJsUtils(configuration) {
-+    this.config = configuration || {};
-+    extraTemplates = this.config.templates || {};
-   }
-
--  HoganJsUtils.prototype.render = function(namespace, view, params, configuration) {
--    var template = this.template(namespace, view, configuration);
-+  HoganJsUtils.prototype.render = function(namespace, view, params) {
-+    var template = this.template(namespace, view);
-     if (template) {
-       return template.render(params);
-     }
-@@ -27,17 +28,16 @@
-     return null;
-   };
-
--  HoganJsUtils.prototype.template = function(namespace, view, configuration) {
--    var config = configuration || {};
-+  HoganJsUtils.prototype.template = function(namespace, view) {
-     var templateKey = this._templateKey(namespace, view);
-
--    return this._getTemplate(templateKey, config);
-+    return this._getTemplate(templateKey);
-   };
-
--  HoganJsUtils.prototype._getTemplate = function(templateKey, config) {
-+  HoganJsUtils.prototype._getTemplate = function(templateKey) {
-     var template;
-
--    if (!config.noCache) {
-+    if (!this.config.noCache) {
-       template = this._readFromCache(templateKey);
-     }
-
-@@ -53,6 +53,7 @@
-
-     try {
-       if (fs.readFileSync) {
-+        var templatesPath = path.resolve(__dirname, 'templates');
-         var templatePath = path.join(templatesPath, templateKey);
-         var templateContent = fs.readFileSync(templatePath + '.mustache', 'utf8');
-         template = hogan.compile(templateContent);
-@@ -66,12 +67,16 @@
-   };
-
-   HoganJsUtils.prototype._readFromCache = function(templateKey) {
--    return hoganTemplates[templateKey];
-+    return extraTemplates[templateKey] || hoganTemplates[templateKey];
-   };
-
-   HoganJsUtils.prototype._templateKey = function(namespace, view) {
-     return namespace + '-' + view;
-   };
-
--  module.exports.HoganJsUtils = new HoganJsUtils();
-+  HoganJsUtils.prototype.compile = function(templateStr) {
-+    return hogan.compile(templateStr);
-+  };
-+
-+  module.exports.HoganJsUtils = HoganJsUtils;
- })();
-diff --git a/src/html-printer.js b/src/html-printer.js
-index 585d5b66..13f83047 100644
---- a/src/html-printer.js
-+++ b/src/html-printer.js
-@@ -8,6 +8,7 @@
- (function() {
-   var LineByLinePrinter = require('./line-by-line-printer.js').LineByLinePrinter;
-   var SideBySidePrinter = require('./side-by-side-printer.js').SideBySidePrinter;
-+  var FileListPrinter = require('./file-list-printer.js').FileListPrinter;
-
-   function HtmlPrinter() {
-   }
-@@ -22,5 +23,10 @@
-     return sideBySidePrinter.generateSideBySideJsonHtml(diffFiles);
-   };
-
-+  HtmlPrinter.prototype.generateFileListSummary = function(diffJson, config) {
-+    var fileListPrinter = new FileListPrinter(config);
-+    return fileListPrinter.generateFileList(diffJson);
-+  };
-+
-   module.exports.HtmlPrinter = new HtmlPrinter();
- })();
-diff --git a/src/line-by-line-printer.js b/src/line-by-line-printer.js
-index b07eb53c..d230bedd 100644
---- a/src/line-by-line-printer.js
-+++ b/src/line-by-line-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'line-by-line';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -19,6 +20,9 @@
-
-   function LineByLinePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   LineByLinePrinter.prototype.makeFileDiffHtml = function(file, diffs) {
-diff --git a/src/side-by-side-printer.js b/src/side-by-side-printer.js
-index bbf1dc8d..5e3033b3 100644
---- a/src/side-by-side-printer.js
-+++ b/src/side-by-side-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'side-by-side';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -26,6 +27,9 @@
-
-   function SideBySidePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   SideBySidePrinter.prototype.makeDiffHtml = function(file, diffs) {
-diff --git a/test/file-list-printer-tests.js b/test/file-list-printer-tests.js
-index a502a46f..60ea3208 100644
---- a/test/file-list-printer-tests.js
-+++ b/test/file-list-printer-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var fileListPrinter = require('../src/file-list-printer.js').FileListPrinter;
-+var fileListPrinter = new (require('../src/file-list-printer.js').FileListPrinter)();
-
- describe('FileListPrinter', function() {
-   describe('generateFileList', function() {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 190bf6f8..3bb754ac 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var HoganJsUtils = require('../src/hoganjs-utils.js').HoganJsUtils;
-+var HoganJsUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)();
- var diffParser = require('../src/diff-parser.js').DiffParser;
-
- describe('HoganJsUtils', function() {
-@@ -21,16 +21,28 @@ describe('HoganJsUtils', function() {
-       });
-       assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should render view without cache', function() {
-       var result = HoganJsUtils.render('generic', 'empty-diff', {
-         contentClass: 'd2h-code-line',
-         diffParser: diffParser
-       }, {noCache: true});
--      assert.equal(emptyDiffHtml + '\n', result);
-+      assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should return null if template is missing', function() {
--      var result = HoganJsUtils.render('generic', 'missing-template', {}, {noCache: true});
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)({noCache: true});
-+      var result = hoganUtils.render('generic', 'missing-template', {});
-       assert.equal(null, result);
-     });
-+
-+    it('should allow templates to be overridden', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+
-+      var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-diff --git a/test/line-by-line-tests.js b/test/line-by-line-tests.js
-index 1cd92073..8869b3df 100644
---- a/test/line-by-line-tests.js
-+++ b/test/line-by-line-tests.js
-@@ -14,7 +14,7 @@ describe('LineByLinePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
-
-       assert.equal(expected, fileHtml);
-     });
-@@ -422,7 +422,6 @@ describe('LineByLinePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                &lt;/tbody&gt;\n' +
-         '            &lt;/table&gt;\n' +
-         '        &lt;/div&gt;\n' +
-diff --git a/test/side-by-side-printer-tests.js b/test/side-by-side-printer-tests.js
-index 76625f8e..771daaa5 100644
---- a/test/side-by-side-printer-tests.js
-+++ b/test/side-by-side-printer-tests.js
-@@ -14,7 +14,7 @@ describe('SideBySidePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
-
-       assert.equal(expectedRight, fileHtml.right);
-       assert.equal(expectedLeft, fileHtml.left);
-@@ -324,7 +324,6 @@ describe('SideBySidePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                    &lt;/tbody&gt;\n' +
-         '                &lt;/table&gt;\n' +
-         '            &lt;/div&gt;\n' +
-
-From f3cadb96677d0eb82fc2752dc3ffbf35ca9b5bdb Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sat, 15 Oct 2016 13:21:22 +0100
-Subject: [PATCH 2/2] Allow uncompiled templates
-
----
- README.md                 |  3 +++
- src/hoganjs-utils.js      |  7 +++++++
- test/hogan-cache-tests.js | 24 +++++++++++++++++++++++-
- 3 files changed, 33 insertions(+), 1 deletion(-)
-
-diff --git a/README.md b/README.md
-index 132c8a28..46909f25 100644
---- a/README.md
-+++ b/README.md
-@@ -98,6 +98,9 @@ The HTML output accepts a Javascript object with configuration. Possible options
-   - `synchronisedScroll`: scroll both panes in side-by-side mode: `true` or `false`, default is `false`
-   - `matchWordsThreshold`: similarity threshold for word matching, default is 0.25
-   - `matchingMaxComparisons`: perform at most this much comparisons for line matching a block of changes, default is `2500`
-+  - `templates`: object with previously compiled templates to replace parts of the html
-+  - `rawTemplates`: object with raw not compiled templates to replace parts of the html
-+  &gt; For more information regarding the possible templates look into [src/templates](https://github.com/rtfpessoa/diff2html/tree/master/src/templates)
-
- ## Diff2HtmlUI Helper
-
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 0dda08d7..b2e9c275 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -17,6 +17,13 @@
-   function HoganJsUtils(configuration) {
-     this.config = configuration || {};
-     extraTemplates = this.config.templates || {};
-+
-+    var rawTemplates = this.config.rawTemplates || {};
-+    for (var templateName in rawTemplates) {
-+      if (rawTemplates.hasOwnProperty(templateName)) {
-+        if (!extraTemplates[templateName]) extraTemplates[templateName] = this.compile(rawTemplates[templateName]);
-+      }
-+    }
-   }
-
-   HoganJsUtils.prototype.render = function(namespace, view, params) {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 3bb754ac..a34839c0 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -36,7 +36,7 @@ describe('HoganJsUtils', function() {
-       assert.equal(null, result);
-     });
-
--    it('should allow templates to be overridden', function() {
-+    it('should allow templates to be overridden with compiled templates', function() {
-       var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-
-       var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-@@ -44,5 +44,27 @@ describe('HoganJsUtils', function() {
-       var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-       assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-     });
-+
-+    it('should allow templates to be overridden with uncompiled templates', function() {
-+      var emptyDiffTemplate = '&lt;p&gt;&lt;/p&gt;';
-+
-+      var config = {rawTemplates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-+
-+    it('should allow templates to be overridden giving priority to compiled templates', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+      var emptyDiffTemplateUncompiled = '&lt;p&gt;Not used!&lt;/p&gt;';
-+
-+      var config = {
-+        templates: {'generic-empty-diff': emptyDiffTemplate},
-+        rawTemplates: {'generic-empty-diff': emptyDiffTemplateUncompiled}
-+      };
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is how you can display code diffs]]></summary></entry><entry><title type="html">a post with advanced image components</title><link href="https://jeremyfix.github.io/blog/2024/advanced-images/" rel="alternate" type="text/html" title="a post with advanced image components"/><published>2024-01-27T11:46:00+00:00</published><updated>2024-01-27T11:46:00+00:00</updated><id>https://jeremyfix.github.io/blog/2024/advanced-images</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2024/advanced-images/"><![CDATA[<p>This is an example post with advanced image components.</p> <h2 id="image-slider">Image Slider</h2> <p>This is a simple image slider. It uses the <a href="https://swiperjs.com/">Swiper</a> library. Check the <a href="https://swiperjs.com/demos">examples page</a> for more information of what you can achieve with it.</p> <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true"> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/9-480.webp 480w,/assets/img/9-800.webp 800w,/assets/img/9-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/9.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/7-480.webp 480w,/assets/img/7-800.webp 800w,/assets/img/7-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/8-480.webp 480w,/assets/img/8-800.webp 800w,/assets/img/8-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/8.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/10-480.webp 480w,/assets/img/10-800.webp 800w,/assets/img/10-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/10.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/12-480.webp 480w,/assets/img/12-800.webp 800w,/assets/img/12-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/12.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"/> </picture> </figure> </swiper-slide> </swiper-container> <h2 id="image-comparison-slider">Image Comparison Slider</h2> <p>This is a simple image comparison slider. It uses the <a href="https://img-comparison-slider.sneas.io/">img-comparison-slider</a> library. Check the <a href="https://img-comparison-slider.sneas.io/examples.html">examples page</a> for more information of what you can achieve with it.</p> <img-comparison-slider> <figure slot="first"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"/> </picture> </figure> <figure slot="second"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic_color-480.webp 480w,/assets/img/prof_pic_color-800.webp 800w,/assets/img/prof_pic_color-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"/> </picture> </figure> </img-comparison-slider>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what advanced image components could look like]]></summary></entry></feed>
+</code></pre> <h2 id="interfacing-with-git">Interfacing with GIT</h2> <p>You can use <a href="https://github.com/lewis6991/gitsigns.nvim">gitsigns</a> to have indications for modification, suppression, addition. You can also directly trigger blame, etc..</p> <p>You can also display what has chaned into the <code class="language-plaintext highlighter-rouge">trouble</code> plugin window, like with <code class="language-plaintext highlighter-rouge">:Gitsigns setloclist</code>. Within this window, you can switch from one modification to another.</p>]]></content><author><name></name></author><category term="nvim"/><category term="nvim"/><category term="init"/><category term="plugins"/><summary type="html"><![CDATA[A path toward customizing neovim]]></summary></entry><entry><title type="html">Adb commands over wifi</title><link href="https://jeremyfix.github.io/blog/2025/adb/" rel="alternate" type="text/html" title="Adb commands over wifi"/><published>2025-09-04T09:30:00+00:00</published><updated>2025-09-04T09:30:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/adb</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/adb/"><![CDATA[<p>I find it usually hard to share files between an android phone and my laptop. Through the bluetooth, for some reasons, the connection seems unstable and downloading, for example, images from the phone to the laptop does not work very well.</p> <p>An alternative is to connect to the phone over the wifi. To do so, you must enable the developper options of the android.</p> <p>You also need the <code class="language-plaintext highlighter-rouge">adb</code> tool on the laptop. On Ubuntu, it is available through apt :</p> <pre><code class="language-.bash">$ sudo apt install adb
+</code></pre> <p>Then, on the phone, you go to the “Wireless debugging” menu and pair a device with a code. You see a pair of IP and port, as well a code. Keep this in mind.</p> <p>On the laptop, you first pair your laptop with the device :</p> <pre><code class="language-.bash">adb pair IP:PORT
+</code></pre> <p>with the right IP/PORT. And you should be asked the code. Once paired, you should see something like</p> <pre><code class="language-.bash">$ adb pair 192.168.xx.xx:37159
+Enter pairing code: 807200
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+Successfully paired to 192.168.xx.xx:37159 [guid=....]
+</code></pre> <p>The next step is to connect to the device</p> <pre><code class="language-.bash">$ adb connect 192.168.xx.xxx:38853
+connected to 192.168.xx.xx:38853
+</code></pre> <p>Note the port may have changed but it is displayed on the android phone. Once connected, you can see the device with</p> <pre><code class="language-.bash">$ adb devices
+List of devices attached
+192.168.1.121:38853     device
+</code></pre> <p>and you can now run commands on the phone like :</p> <ul> <li>listing the content of the storage looking for the photos :</li> </ul> <pre><code class="language-.bash">$ adb shell ls /storage/emulated/0/DCIM/Camera
+</code></pre> <ul> <li>pulling from the phone to the laptop some photos :</li> </ul> <pre><code class="language-.bash">$ adb pull /storage/emulated/0/DCIM/Camera/IMG_20250903_091343.jpg
+</code></pre> <p>Or even running a shell on the phone</p> <pre><code class="language-.bash">$ adb shell
+</code></pre>]]></content><author><name></name></author><category term="android"/><category term="android"/><category term="wifi"/><category term="computer"/><category term="share"/><summary type="html"><![CDATA[Easy sharing of files with your android phone]]></summary></entry><entry><title type="html">Rethinking deep vision interpretability</title><link href="https://jeremyfix.github.io/blog/2025/interpretation/" rel="alternate" type="text/html" title="Rethinking deep vision interpretability"/><published>2025-08-28T10:00:00+00:00</published><updated>2025-08-28T10:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/interpretation</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/interpretation/"><![CDATA[<p>For his PhD award talk at Gretsi, Thomas Fel gave a talk on explainability of deep vision models. Among the various approaches, attribution methods (Grad CAM) produce saliency maps indicating which part of the input is used by the neural network to build up its response.</p> <p>However, these attribution methods are restricted to inform about the where and not the what. It does not tell you about the nature of the pattern the neural network has extracted. In this work, T. Fel developes techniques to extract concepts from deep neural networks. Concepts are extracted by non-negative matrix factorization techniques (missing reference). A survey on concept based explainable AI can be found in (missing reference). In deep neural networks, there is nothing like the grand mother cell, a cell that would alone encode a feature; At least, this is not always true. The concepts are encoded by distributed patterns of activations (missing reference).</p> <p>In his talk, he also mentioned the <strong>Linear Representation Hypothesis</strong> where features could be encoded as directions in the latent space of neural networks. However, as he mentioned, in practice, this does not appear to be the case because of the steering problem : pushing a representation toward such vectors actually steers the output along one feature but at some point fails.</p> <p>In (missing reference), he introduces a unifying framework of concept extraction techniques (e.g. K-means, PCA, or NMF): they basically all fall into the category of dictionary learning.</p> <p>The <a href="https://serre-lab.github.io/Lens/">Lens</a> project provides illustrations of visual concepts extracted from a large vision model trained on ImageNet. A cup of coffee hence appears to activate the concepts of latte art, handle, and black coffee. It helps also explaining failure cases. One example he showed was the “Man on the moon” picture that a neural network could classify as a shovel. Using visual concepts, it could be identified that this picture excites the concepts of trouser and rubble, that you actually see on the picture. However, in ImageNet, these two concepts are often strongly correlated with people using a shovel for snow.</p> <p>Finally, I would like to mention the explainability toolbox <a href="https://github.com/deel-ai/xplique">Xplique</a> which implements several explainability methods, in particular concept based approaches previously mentioned.</p>]]></content><author><name></name></author><category term="explanability"/><category term="explainability"/><category term="deep"/><category term="vision"/><category term="concept"/><summary type="html"><![CDATA[Explainability with attribution is limited to indicate the where. Concept extraction allows to capture the what.]]></summary></entry><entry><title type="html">Atomic auto-encoders for learning sparse representations</title><link href="https://jeremyfix.github.io/blog/2025/aaae/" rel="alternate" type="text/html" title="Atomic auto-encoders for learning sparse representations"/><published>2025-08-26T10:15:00+00:00</published><updated>2025-08-26T10:15:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/aaae</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/aaae/"><![CDATA[<p>At the <a href="https://gretsi.fr/colloque2025/">Gretsi 2025</a>, one session was about inverse problems. An example inverse problem involves find a high-dimensional signal \(x\) from low dimensional observations \(y\) under a linear model \(y = A x +z\) where \(z\) is a measurement noise, \(A\) the sensing matrix.</p> <p>One approach involves compressed sensing where you try to decompose your signal as the combination of the smallest number of dictionnary elements. In this family of approachs, (missing reference) proposed latent auto-encoders.</p>]]></content><author><name></name></author><category term="optimization"/><category term="sparse"/><category term="representation"/><category term="atomic"/><category term="autoencoder"/><summary type="html"><![CDATA[Using a specific type of auto-encoders to learn a sparse representation of your data]]></summary></entry><entry><title type="html">Regularized gradient descent</title><link href="https://jeremyfix.github.io/blog/2025/rgd/" rel="alternate" type="text/html" title="Regularized gradient descent"/><published>2025-08-26T10:00:00+00:00</published><updated>2025-08-26T10:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/rgd</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/rgd/"><![CDATA[<p>I have been attending a talk discussing inverse problems optimization using plug-and-play algorithms. During the talk, the speaker made a quick and clear path from regularized gradient descent to plug-and-play approaches.</p> <p>Here it is. When you want to constrain your optimization problem to find solutions, you can classically add a penalty term, or so-called regularization term to the loss function.</p> <p>For example, consider a regularized least square with a radial basis function representation of your input. In the expression below, we denote by $y$ the vector of all the outputs to be predicted, $w$ the amplitudes of the gaussians of the RBF. We do not specify it further but, to fix the ideas, $\Phi$ would be the function whose output components contain the evaluation of the individual RBF functions evaluated on the data points $x$.</p> \[min_w \|y - w^T \Phi(x)\|^2 + \lambda \|w\|_1\] <p>This is of the general form \(f(x) + g(x)\) where \(g\) contains our regularization term. Here, the regularization is the L1 norm which promotes sparsity. With classical gradient descent, you compute the gradient of this compound cost and iterate with whichever algorithm you like (stochastic gradient descent, adam, etc…).</p> <p>A step further, you could iterate one step of minimizing the likelihood (minimizing the MSE can be seen as maximizing the likelihood of the data under the hypothesis of a normal distribution whose mean is given by our linear model) and one step of minimizing the constraint. Proximal gradient descent is a step further as it allows to consider \(g(x)\) that are not differentiable.</p> <p>Proximal gradient descent (missing reference) iteratively updates the estimate of the solution by :</p> \[x_{k+1} = \text{prox}_\alpha(x_k - \alpha \nabla f(x_k))\] <p>with</p> \[\text{prox}_\alpha(z) = \text{argmin}_y (\frac{1}{2\alpha}\|y - z\|^2 + g(y))\] <p>The operator \(\text{prox}\) is called the proximity operator.</p> <p>The proximal operator requires a minimization. In the plug-and-play (missing reference) approach, you replace that minimization by a denoising step. This denoising step can be implemented with a denoising neural network.</p> <p>In his works, <a href="https://samuelhurault.netlify.app/">Samuel Hurault</a> (who is recipients of a best PhD award), was interested (among other things I believe), to recover convergence guarantees on the the plug-and-play algorithms that are lost if you blindly implement the regularization with a denoising network.</p>]]></content><author><name></name></author><category term="optimization"/><category term="plug-and-play"/><category term="proximal"/><summary type="html"><![CDATA[Plug-and-play algorithms]]></summary></entry><entry><title type="html">Job token permissions to access registries</title><link href="https://jeremyfix.github.io/blog/2025/jobtoken/" rel="alternate" type="text/html" title="Job token permissions to access registries"/><published>2025-08-26T10:00:00+00:00</published><updated>2025-08-26T10:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/jobtoken</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/jobtoken/"><![CDATA[<p>We have a setup where a private gitlab repository is hosting a docker image in its container registry. This image is used with several repositories to build up documents, web pages, etc..</p> <p>Unfortunately, sometimes, we have the issue that the job running on the secondary repositories fail with some errors like :</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WARNING: Failed to pull image with policy "if-not-present": Error response from
+daemon: pull access denied for ...
+</code></pre></div></div> <p>Actually this turns out to be a permission issue that must can be fixed on the gitlab repository hosting the image. This can be configured in the “Settings / CI-CD / Job Token permissions” menu. There, you can define an allowlist of foreign repositories that can access the registry.</p>]]></content><author><name></name></author><category term="gitlab"/><category term="cicd"/><category term="registry"/><category term="pull"/><category term="plug-and-play"/><category term="proximal"/><summary type="html"><![CDATA[How to allow a gitlab repository to access the container registry of another, private, repository]]></summary></entry><entry><title type="html">Test</title><link href="https://jeremyfix.github.io/blog/2025/test/" rel="alternate" type="text/html" title="Test"/><published>2025-08-25T18:00:00+00:00</published><updated>2025-08-25T18:00:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/test</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/test/"><![CDATA[<p>Just a dummy post to test the workflow. My posts do not seem to be updated anymore.</p>]]></content><author><name></name></author><category term="test"/><category term="test"/><summary type="html"><![CDATA[Simple test]]></summary></entry><entry><title type="html">Changing surrounding delimiters in VIM</title><link href="https://jeremyfix.github.io/blog/2025/vimdelimiter/" rel="alternate" type="text/html" title="Changing surrounding delimiters in VIM"/><published>2025-03-24T12:41:00+00:00</published><updated>2025-03-24T12:41:00+00:00</updated><id>https://jeremyfix.github.io/blog/2025/vimdelimiter</id><content type="html" xml:base="https://jeremyfix.github.io/blog/2025/vimdelimiter/"><![CDATA[<p>Vim is magic. I had tu change the surrounding delimiters of strings.</p> <p>Basically, I had text like below and wanted to replace the backquote delimiter.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| 0x10 | LDAi | 2 | Charge la valeur de l'opérande dans le registre A `[A := operande]` |
+| 0x14 | LDAd | 2 | Charge la valeur dans la RAM pointée par l'opérande dans le registre A. `[A := Mem[opérande]]` |
+| 0x18 | - | - | - |
+| 0x1c | STA | 2 | Sauvegarde en mémoire la valeur du registre A à l'adresse donnée par l'opérande. `[Mem[opérande] := A]` |
+| 0x20 | LDBi | 2 | Charge la valeur de l'opérande dans le registre B `[B := operande]` |
+| 0x24 | LDBd | 2 | Charge la valeur dans la RAM pointée par l'opérande dans le registre B. `[B := Mem[opérande]]` |
+</code></pre></div></div> <p>Every string like <code class="language-plaintext highlighter-rouge">\</code>[A := operande]`<code class="language-plaintext highlighter-rouge">was to be replaced by</code>{++[A := operande]++}`.</p> <p>To do so with, it is as easy as 1) visually selecting the lines where you want a modification (Ctrl + V), and 2) press “:” followed by the magic recipe</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>s/`\(.*\)`/{++\1++}/g
+</code></pre></div></div> <p>which stands for :</p> <ul> <li>s …. g : substitue globally in the grammar s/src_pattern/dst_pattern/g</li> <li>the source pattern is a repetition of which ever character <code class="language-plaintext highlighter-rouge">.* </code> we capture in a group by the surrounding ( and ); This source pattern is surrounded by the source delimiter, hence the backquotes</li> <li>the target pattern is the new delimiters surrounding the group copy/pasted with the \1</li> </ul>]]></content><author><name></name></author><category term="vim"/><category term="vim"/><category term="sed"/><category term="substitute"/><summary type="html"><![CDATA[Vim is magic. I had tu change the surrounding delimiters of strings.]]></summary></entry></feed>

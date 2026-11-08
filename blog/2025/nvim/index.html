@@ -1,0 +1,554 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Customizing neovim | Jeremy Fix </title> <meta name="author" content="Jeremy Fix"> <meta name="description" content="A path toward customizing neovim"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website, jeremy fix"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8E%93&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://jeremyfix.github.io/blog/2025/nvim/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jeremy</span> Fix </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Customizing neovim</h1> <p class="post-meta"> Created on September 05, 2025 </p> <p class="post-tags"> <a href="/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>   ·   <a href="/blog/tag/nvim"> <i class="fa-solid fa-hashtag fa-sm"></i> nvim</a>   <a href="/blog/tag/init"> <i class="fa-solid fa-hashtag fa-sm"></i> init</a>   <a href="/blog/tag/plugins"> <i class="fa-solid fa-hashtag fa-sm"></i> plugins</a>   ·   <a href="/blog/category/nvim"> <i class="fa-solid fa-tag fa-sm"></i> nvim</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>After working for a while with vim, I’m currently giving a try to neovim. This blog post contains notes on my first steps and discovery of plugins. I believe I will pretty quickly forget about the steps I followed to set this up :)</p> <p>The <strong>rc</strong> file of neovim is a lua script <code class="language-plaintext highlighter-rouge">init.lua</code> you find in <code class="language-plaintext highlighter-rouge">.config/nvim/init.lua</code>. Mine is bascially only containing the plugin manager Lazy.nvim :</p> <pre><code class="language-.lua">local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("vim-options")
+require("lazy").setup("plugins")
+</code></pre> <p>This will also trigger loading the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/vim-options.lua</code> and <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins.lua</code> files. The <code class="language-plaintext highlighter-rouge">vim-options</code> file contains some shortcuts, definitions of tabstop, expandtab, etc..</p> <p>The plugins file only contains <code class="language-plaintext highlighter-rouge">return {}</code> but I believe will trigger loading all the plugins in the <code class="language-plaintext highlighter-rouge">.config/nvim/lua/plugins</code> directory.</p> <p>Installing plugins is easy. You just add the lua files, close and reopen nvim and they will be cloned/installed/configured.</p> <h2 id="installing-a-nerd-font">Installing a Nerd Font</h2> <p>We can have very nice icons within nvim, especially with the Neotree plugin, after having installed a patched font from the <a href="https://www.nerdfonts.com/font-downloads" rel="external nofollow noopener" target="_blank">Nerd font project</a>. In my case, I just download the Ubuntu Nerd font. You have to :</p> <ul> <li>download the zip</li> <li>extract the zip into <code class="language-plaintext highlighter-rouge">.fonts/</code> </li> <li>run the command <code class="language-plaintext highlighter-rouge">fc-cache -fv</code> </li> </ul> <p>and that’s it. Combined with the <a href="https://github.com/nvim-neo-tree/neo-tree.nvim" rel="external nofollow noopener" target="_blank">nvim-neo-tree</a>, you get a nice file explorer. For the configuration of neo-tree, here is the <code class="language-plaintext highlighter-rouge">plugins/neo-tree.lua</code> file :</p> <pre><code class="language-.lua">return {
+	"nvim-neo-tree/neo-tree.nvim",
+	branch = "v3.x",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-tree/nvim-web-devicons",
+		"MunifTanjim/nui.nvim",
+	},
+	config = function()
+		vim.keymap.set("n", "&lt;C-n&gt;", ":Neotree filesystem reveal left&lt;CR&gt;", {})
+		vim.keymap.set("n", "&lt;leader&gt;o", ":Neotree buffers reveal float&lt;CR&gt;", {})
+	end,
+}
+</code></pre> <p>Where my <code class="language-plaintext highlighter-rouge">&lt;leader&gt;o</code> shows the buffer list. I believe it is <code class="language-plaintext highlighter-rouge">devicons</code> that display the icons embedded in the patched font.</p> <h2 id="greeting-page-with-alpha">Greeting page with alpha</h2> <p>The <code class="language-plaintext highlighter-rouge">alpha-nvim</code> plugin configures the starting page of nvim</p> <h2 id="color-theme">Color theme</h2> <p>The <a href="https://github.com/catppuccin/nvim" rel="external nofollow noopener" target="_blank">catpuccin.nvim</a> plugin offers a nice color theme. I’m using the mocha one, defined in the <code class="language-plaintext highlighter-rouge">plugins/catppuccin.lua</code> script :</p> <pre><code class="language-.lua">return {
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin-mocha"
+    end
+  }
+}
+</code></pre> <h2 id="language-server-protocols">Language Server Protocols</h2> <p>LSP are the way to have custom functionalities depending on the language you are coding with. I used <a href="">nvim-lspconfig</a> with <a href="">mason.nvim</a> and <a href="">mason-lspconfig</a> doing the bridge. Following the README of <code class="language-plaintext highlighter-rouge">mason-lspconfig</code> and adding few LSP by default leads to the following <code class="language-plaintext highlighter-rouge">plugins/lsp-config.lua</code></p> <pre><code class="language-.lua">return
+{
+    "mason-org/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = { "lua_ls", "rust_analyzer", "basedpyright" }
+    },
+    dependencies = {
+        { "mason-org/mason.nvim", opts = {} },
+        "neovim/nvim-lspconfig",
+    },
+}
+</code></pre> <p>Here some language servers are defined by default by you can obviously add more. Just defining them there and, tadam, they auto install with the magic of these plugins.</p> <p>The plugin <a href="https://github.com/nvimtools/none-ls.nvim" rel="external nofollow noopener" target="_blank">none-ls.nvim</a> is also setup. I’m not yet sure but it allows to use pure lua scripts as LSP sources. I used the configuration I found somewhere, see below, I still need to dig into it.</p> <pre><code class="language-.lua">return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.erb_lint,
+        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.rubocop,
+      },
+    })
+
+    vim.keymap.set("n", "&lt;leader&gt;gf", vim.lsp.buf.format, {})
+  end,
+}
+</code></pre> <p>The lsp server will raise warning and errors. An easy way to see these warnings is to use the <a href="https://github.com/folke/trouble.nvim" rel="external nofollow noopener" target="_blank">trouble.nvim</a> plugin for which I defined the proposed configuration in <code class="language-plaintext highlighter-rouge">plugins/trouble.lua</code> :</p> <pre><code class="language-.lua">return {
+  "folke/trouble.nvim",
+  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  cmd = "Trouble",
+  keys = {
+    {
+      "&lt;leader&gt;xx",
+      "&lt;cmd&gt;Trouble diagnostics toggle&lt;cr&gt;",
+      desc = "Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xX",
+      "&lt;cmd&gt;Trouble diagnostics toggle filter.buf=0&lt;cr&gt;",
+      desc = "Buffer Diagnostics (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cs",
+      "&lt;cmd&gt;Trouble symbols toggle focus=false&lt;cr&gt;",
+      desc = "Symbols (Trouble)",
+    },
+    {
+      "&lt;leader&gt;cl",
+      "&lt;cmd&gt;Trouble lsp toggle focus=false win.position=right&lt;cr&gt;",
+      desc = "LSP Definitions / references / ... (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xL",
+      "&lt;cmd&gt;Trouble loclist toggle&lt;cr&gt;",
+      desc = "Location List (Trouble)",
+    },
+    {
+      "&lt;leader&gt;xQ",
+      "&lt;cmd&gt;Trouble qflist toggle&lt;cr&gt;",
+      desc = "Quickfix List (Trouble)",
+    },
+  },
+}
+</code></pre> <h2 id="edit-your-filesystem-as-a-nvim-buffer-with-oil">Edit your filesystem as a nvim buffer with oil</h2> <p>The <a href="https://github.com/stevearc/oil.nvim" rel="external nofollow noopener" target="_blank">oil.nvim</a> allows to edit (rename, create files, etc..) your filesystem as you would do in a normal buffer. You can configure it with <code class="language-plaintext highlighter-rouge">plugins/oil.lua</code> :</p> <pre><code class="language-.lua">return {
+  "stevearc/oil.nvim",
+  config = function()
+    local oil = require("oil")
+    oil.setup()
+    vim.keymap.set("n", "-", oil.toggle_float, {})
+  end,
+}
+</code></pre> <p>Then raise nvim as <code class="language-plaintext highlighter-rouge">nvim .</code> to open the current directory. You can navigate with <code class="language-plaintext highlighter-rouge">&lt;CR&gt;</code> or <code class="language-plaintext highlighter-rouge">-</code>, go into insert mode, change characters, etc.. and validate all these changes.</p> <h2 id="fuzzy-find-with-telescope">Fuzzy find with telescope</h2> <p>Using <a href="https://github.com/nvim-telescope/telescope.nvim" rel="external nofollow noopener" target="_blank">telescope.nvim</a> for fuzzy things :)</p> <h2 id="tools-for-programming">Tools for programming</h2> <p>In addition to LSP, I also configured <a href="https://github.com/nvim-treesitter/nvim-treesitter" rel="external nofollow noopener" target="_blank">nvim-treesitter</a>. I need to experiment with it.</p> <p>What about completion ? I’m using several plugins I found configured on one repo . I also need to customize this, maybe to have python snippets for example.</p> <p>The <code class="language-plaintext highlighter-rouge">plugins/completions.lua</code> is for now :</p> <pre><code class="language-.lua">return {
+  {
+    "hrsh7th/cmp-nvim-lsp"
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets",
+    },
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      local cmp = require("cmp")
+      require("luasnip.loaders.from_vscode").lazy_load()
+
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["&lt;C-b&gt;"] = cmp.mapping.scroll_docs(-4),
+          ["&lt;C-f&gt;"] = cmp.mapping.scroll_docs(4),
+          ["&lt;C-Space&gt;"] = cmp.mapping.complete(),
+          ["&lt;C-e&gt;"] = cmp.mapping.abort(),
+          ["&lt;CR&gt;"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
+          { name = "buffer" },
+        }),
+      })
+    end,
+  },
+}
+
+</code></pre> <h2 id="interfacing-with-git">Interfacing with GIT</h2> <p>You can use <a href="https://github.com/lewis6991/gitsigns.nvim" rel="external nofollow noopener" target="_blank">gitsigns</a> to have indications for modification, suppression, addition. You can also directly trigger blame, etc..</p> <p>You can also display what has chaned into the <code class="language-plaintext highlighter-rouge">trouble</code> plugin window, like with <code class="language-plaintext highlighter-rouge">:Gitsigns setloclist</code>. Within this window, you can switch from one modification to another.</p> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="noopener noreferrer">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="noopener noreferrer">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/uv2/">Liste des techniques pour l'UV2</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/eolgpu/">End of support for Volta GPUs with pytorch</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/adb/">Adb commands over wifi</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/interpretation/">Rethinking deep vision interpretability</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/aaae/">Atomic auto-encoders for learning sparse representations</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/jobtoken/">Job token permissions to access registries</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/rgd/">Regularized gradient descent</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/test/">Test</a> </li> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jeremy Fix. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. Last updated: November 08, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A growing collection of your cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "This page contains a pointer to repositories that I contribute to.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Course materials, schedules, and resources for classes taught.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-people",
+          title: "people",
+          description: "members of the lab or group",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/people/";
+          },
+        },{id: "dropdown-bookshelf",
+              title: "bookshelf",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/books/";
+              },
+            },{id: "dropdown-blog",
+              title: "blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "post-liste-des-techniques-pour-l-39-uv2",
+        
+          title: "Liste des techniques pour l'UV2",
+        
+        description: "Liste des techniques à réviser pour l'UV2",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/uv2/";
+          
+        },
+      },{id: "post-end-of-support-for-volta-gpus-with-pytorch",
+        
+          title: "End of support for Volta GPUs with pytorch",
+        
+        description: "Latest pytorch versions stop supporting older GPUs",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/eolgpu/";
+          
+        },
+      },{id: "post-customizing-neovim",
+        
+          title: "Customizing neovim",
+        
+        description: "A path toward customizing neovim",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/nvim/";
+          
+        },
+      },{id: "post-adb-commands-over-wifi",
+        
+          title: "Adb commands over wifi",
+        
+        description: "Easy sharing of files with your android phone",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/adb/";
+          
+        },
+      },{id: "post-rethinking-deep-vision-interpretability",
+        
+          title: "Rethinking deep vision interpretability",
+        
+        description: "Explainability with attribution is limited to indicate the where. Concept extraction allows to capture the what.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/interpretation/";
+          
+        },
+      },{id: "post-atomic-auto-encoders-for-learning-sparse-representations",
+        
+          title: "Atomic auto-encoders for learning sparse representations",
+        
+        description: "Using a specific type of auto-encoders to learn a sparse representation of your data",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/aaae/";
+          
+        },
+      },{id: "post-job-token-permissions-to-access-registries",
+        
+          title: "Job token permissions to access registries",
+        
+        description: "How to allow a gitlab repository to access the container registry of another, private, repository",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/jobtoken/";
+          
+        },
+      },{id: "post-regularized-gradient-descent",
+        
+          title: "Regularized gradient descent",
+        
+        description: "Plug-and-play algorithms",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/rgd/";
+          
+        },
+      },{id: "post-test",
+        
+          title: "Test",
+        
+        description: "Simple test",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/test/";
+          
+        },
+      },{id: "post-changing-surrounding-delimiters-in-vim",
+        
+          title: "Changing surrounding delimiters in VIM",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/vimdelimiter/";
+          
+        },
+      },{id: "post-python-and-paraview-for-batch-processing",
+        
+          title: "Python and Paraview for batch processing",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/scriptingParaview/";
+          
+        },
+      },{id: "post-one-liners",
+        
+          title: "One liners",
+        
+        description: "One liner beauty for aggregating files and computing statistics",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/oneliner/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-project-2",
+          title: 'project 2',
+          description: "a project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
+            },},{id: "projects-project-3-with-very-long-name",
+          title: 'project 3 with very long name',
+          description: "a project that redirects to another website",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-project-4",
+          title: 'project 4',
+          description: "another without an image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
+            },},{id: "projects-project-5",
+          title: 'project 5',
+          description: "a project with a background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
+            },},{id: "projects-project-6",
+          title: 'project 6',
+          description: "a project with no image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
+            },},{id: "projects-project-7",
+          title: 'project 7',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
+            },},{id: "projects-project-8",
+          title: 'project 8',
+          description: "an other project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project/";
+            },},{id: "projects-project-9",
+          title: 'project 9',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6A%65%72%65%6D%79.%66%69%78@%63%65%6E%74%72%61%6C%65%73%75%70%65%6C%65%63.%66%72", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/jeremyfix", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0003-1889-8886", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=VT6Mq1wAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-stackoverflow',
+        title: 'Stackoverflow',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://stackoverflow.com/users/2164582", "_blank");
+        },
+      },{
+        id: 'social-work',
+        title: 'Work',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.centralesupelec.fr/fr/49330c84-ddbc-4211-bf84-d8b06ff7ad6d", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
